@@ -1,5 +1,8 @@
 # -*- coding: utf-8
 import collections
+import colour
+import csv
+import itertools
 import json
 import math
 import re
@@ -14,6 +17,7 @@ class KanjiInfo(object):
     self.wanikani_level = wanikani_level
     self.grade = grade
     self.frequency = None
+    self.indices = {}
 
 _NUM_WANIKANI_LEVELS = 60
 
@@ -89,6 +93,92 @@ def add_frequency(kanji_info):
   if unseen_kanji:
     print('failed to find frequency info for: ', ', '.join(unseen_kanji))
 
+
+def add_sort_orders(kanji_info):
+  # From https://docs.google.com/spreadsheets/d/19zorQpMJi00-b6abuvE5uBAIsMMqWVrbeHD-bIrkggQ/
+  with open('kanken_heisig.csv') as f:
+    reader = csv.DictReader(f)
+    kanji_to_row = {row['Kanji']: row for row in reader}
+
+  indices = {
+    'heisig': 'Heisig RTK Index',
+    'rtk2': 'RTK2 Index',
+    '2k1K0': '2k1KO Index',
+    'opt_vocab_sort': 'Opt Vocab Sort Index',
+    'kanji_leaner_course': 'Kanji Learner Course Index',
+    'frequency': 'Freq.'
+  }
+  for kanji, info in kanji_info.items():
+    if kanji in kanji_to_row:
+      row = kanji_to_row[kanji]
+      for label, column in indices.items():
+        if row[column]:
+          info.indices[label] = int(row[column])
+
+def add_radicals(kanji_info):
+  # Load radical data.
+  with open('radicals.txt') as f:
+    lines = [l for l in f.read().strip().split('\n') if not l.startswith('#')]
+  kanji_to_radicals = {}
+  for line in lines:
+    kanji, radicals = line.split(' : ')
+    kanji_to_radicals[kanji] = radicals.split()
+
+  unseen_kanji = []
+  for kanji, info in kanji_info.items():
+    if kanji in kanji_to_radicals:
+      info.radicals = kanji_to_radicals[kanji]
+    else:
+      info.radicals = []
+      unseen_kanji.append(kanji)
+
+  if unseen_kanji:
+    print('failed to find radicals for: ', ', '.join(unseen_kanji))
+
+
+def group_by_radicals(kanji_info):
+  seen = set()
+
+  predefined_radical_groups = ['辶']
+
+  # First take kanji who are their own radicals.
+  grouped_kanji = {r: [] for r in predefined_radical_groups}
+  for kanji, info in kanji_info.items():
+    if not info.radicals or info.radicals == [kanji]:
+      seen.add(kanji)
+      if kanji not in grouped_kanji:
+        grouped_kanji[kanji] = []
+      grouped_kanji[kanji].append(kanji)
+
+  for kanji, info in kanji_info.items():
+    if kanji in seen:
+      continue
+    for radical in info.radicals:
+      if radical in grouped_kanji:
+        seen.add(kanji)
+        grouped_kanji[radical].append(kanji)
+        break
+
+  for radical, kanjis in grouped_kanji.items():
+    print(radical, ':', ''.join(kanjis))
+
+  print('述', kanji_info['述'].radicals)
+
+  radical_to_kanji = collections.defaultdict(list)
+  for kanji, info in kanji_info.items():
+    for n in range(1, len(info.radicals) + 1):
+      for radical_subset in itertools.combinations(info.radicals, n):
+        radical_to_kanji[''.join(radical_subset)].append(kanji)
+
+  # seen = set()
+  # for radical_subset, kanjis in sorted(radical_to_kanji.items(), key=lambda kv: len(kv[0]), reverse=True):
+  #   unseen = [k for k in kanjis if k not in seen]
+  #   if len(unseen) > 1:
+  #     print(radical_subset, unseen)
+  #     for kanji in kanjis:
+  #       seen.add(kanji)
+
+
 # Some of the meanings are too long to fit in one line, so we replace them with
 # a shorter version.
 _MEANING_REPLACEMENTS = {
@@ -119,38 +209,49 @@ def is_set(text):
 def color(text, c):
   return r'\textcolor[HTML]{%s}{%s}' % (c, text)
 
-def sort_key(kv):
-  info = kv[1]
-  return (1 - info.frequency, info.wanikani_level or 61, info.grade or 7)
+# Gradient from a very dark color for infrequent characters to a very light
+# color for the most frequent ones.
+_COLORS = list(colour.Color('#0e254c').range_to(colour.Color('#6fa3fb'), 20))
 
-def generate_poster_tex(kanji_info):
+def choose_color(info):
+  # Map the frequency to a log scale before indexing the color gradient.
+  max_freq = -1
+  min_freq = -12
+  log_freq = math.log(info.frequency) if info.frequency > 0 else min_freq
+  log_freq = min(max_freq, max(log_freq, min_freq))
+  index = int((log_freq - min_freq) / (max_freq - min_freq) * len(_COLORS))
+  return _COLORS[index].hex[1:]
+
+def generate_poster_tex(kanji_info, sort_by, minimal=False):
   cell_size = 2.05
   num_cols = 56
 
   tex = ""
   cum_freq = 0
   for i, (kanji, info) in enumerate(sorted(kanji_info.items(),
-                                   key=sort_key)[0:5000]):
+                                   key=lambda kv: sort_by(kv[1]))[0:5000]):
     cum_freq += info.frequency
 
     row = int(i / num_cols)
     x = cell_size * (i % num_cols) - 56.5
     y = 40 - cell_size * row
-    tex += "\\node[Square] at (%f, %f) {};\n" % (x, y)
-    tex += "\\node[Kanji] at (%f, %f) {%s};\n" % (x, y + 0.5, kanji)
-    if is_set(info.onyomi):
-      onyomi = jaconv.hira2kata(info.onyomi.split(',')[0])
-      tex += "\\node[Onyomi] at (%f, %f) {%s};\n" % (x + 0.05, y + 0.1, onyomi)
-    if is_set(info.kunyomi):
-      tex += "\\node[Kunyomi] at (%f, %f) {%s};\n" % (x - 0.05, y + 0.1, info.kunyomi.split(',')[0])
-    meaning = info.meaning.split(',')[0]
-    if kanji in _MEANING_REPLACEMENTS:
-      print('replaced', i, kanji, meaning, _MEANING_REPLACEMENTS[kanji])
-      meaning = _MEANING_REPLACEMENTS[kanji]
-    if len(meaning) > 14:
-      print(i, kanji, meaning, )
-    tex += "\\node[Meaning] at (%f, %f) {%s};\n" % (x, y + 1.75, meaning)
-    # tex += "\\node[Meaning] at (%f, %f) {%.2f\\%%};\n" % (x, y + 1.75, cum_freq * 100)
+    if not minimal:
+      tex += "\\node[Square] at (%f, %f) {};\n" % (x, y)
+    tex += "\\node[Kanji] at (%f, %f) {%s};\n" % (x, y + 0.5, color(kanji, choose_color(info)))
+    if not minimal:
+      if is_set(info.onyomi):
+        onyomi = jaconv.hira2kata(info.onyomi.split(',')[0])
+        tex += "\\node[Onyomi] at (%f, %f) {%s};\n" % (x + 0.05, y + 0.1, onyomi)
+      if is_set(info.kunyomi):
+        tex += "\\node[Kunyomi] at (%f, %f) {%s};\n" % (x - 0.05, y + 0.1, info.kunyomi.split(',')[0])
+      meaning = info.meaning.split(',')[0]
+      if kanji in _MEANING_REPLACEMENTS:
+        print('replaced', i, kanji, meaning, _MEANING_REPLACEMENTS[kanji])
+        meaning = _MEANING_REPLACEMENTS[kanji]
+      if len(meaning) > 14:
+        print(i, kanji, meaning, )
+      tex += "\\node[Meaning] at (%f, %f) {%s};\n" % (x, y + 1.75, meaning)
+      # tex += "\\node[Meaning] at (%f, %f) {%.2f\\%%};\n" % (x, y + 1.75, cum_freq * 100)
 
     if (i + 1) % num_cols == 0 or (i + 1) == len(kanji_info):
       # If this is the last character in the row, record the cumulative
@@ -168,11 +269,21 @@ def generate_poster_tex(kanji_info):
 
   return tex
 
+def make_sort_function(index):
+  def get_key(info):
+    if index == 'wanikani':
+      key = info.wanikani_level or 61
+    else:
+      key = info.indices.get(index, 100000)
+    return (key, 1 - info.frequency)
+  return get_key
 
 def main():
   kanji_info = read_wanikanji()
   merge_with_joyo(kanji_info)
   add_frequency(kanji_info)
+  add_radicals(kanji_info)
+  add_sort_orders(kanji_info)
 
   with open('footer.tex', 'w') as f:
     f.write('%d kanji covering %.2f\\%% of common Japanese text, ordered by frequency.' % (
@@ -180,7 +291,7 @@ def main():
       100 * sum(info.frequency for info in kanji_info.values())))
 
   with open('kanji_grid.tex', 'w') as f:
-    f.write(generate_poster_tex(kanji_info))
+    f.write(generate_poster_tex(kanji_info, make_sort_function('heisig'), minimal=False))
 
 
 if __name__ == '__main__':
