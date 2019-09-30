@@ -1,0 +1,77 @@
+\documentclass[12pt, a0paper, landscape]{tikzposter}
+\usepackage[utf8]{inputenc}
+\usepackage{CJKutf8}
+\usepackage{anyfontsize}
+\usepackage{hyperref}
+
+\urlstyle{same}
+
+\usetheme{Simple}
+
+\newcommand{\Size}{2.05cm}
+\tikzset{Square/.style={
+    inner sep=0pt,
+    text width=\Size,
+    text height=\Size,
+    minimum size=\Size,
+    draw=lightgray,
+    ultra thin,
+    align=center,
+    }
+}
+
+\tikzset{Kanji/.style={
+    inner sep=0pt,
+    text width=\Size,
+    text height=\Size,
+    minimum size=\Size,
+    font=\fontsize{36}{43},
+    align=center,
+    }
+}
+
+\tikzset{Onyomi/.style={
+    inner sep=0pt,
+    text width=\Size,
+    text height=\Size,
+    minimum size=\Size,
+    font=\fontsize{8}{9},
+    align=left,
+    }
+}
+
+\tikzset{Kunyomi/.style={
+    inner sep=0pt,
+    text width=\Size,
+    text height=\Size,
+    minimum size=\Size,
+    font=\fontsize{8}{9},
+    align=right,
+    }
+}
+
+\tikzset{Meaning/.style={
+    inner sep=0pt,
+    text width=\Size,
+    text height=\Size,
+    minimum size=\Size,
+    font=\scriptsize,
+    align=center,
+    text=gray,
+    }
+}
+
+\begin{document}
+
+
+\begin{CJK}{UTF8}{min}
+\input{kanji_grid}
+\end{CJK}
+
+\node [above right,outer sep=10pt,minimum width=\paperwidth,align=center] at (bottomleft) {
+\input{footer}
+Kanji data from \url{https://www.wanikani.com} and \url{https://en.wikipedia.org/wiki/List_of_joyo_kanji}.
+
+};
+
+\end{document}
