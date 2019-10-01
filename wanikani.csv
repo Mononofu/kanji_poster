@@ -1,0 +1,2027 @@
+1;七;seven;しち;なな.*
+1;二;two;に;ふた.*
+1;三;three;さん;み.*
+1;山;mountain;さん;やま
+1;大;big, large;たい, だい;おお
+1;女;woman;じょ;おんな, め
+1;入;enter;にゅう;はい.る, い.れる
+1;九;nine;く, きゅう;ここの.*
+1;人;person;にん, じん;ひと
+1;八;eight;はち;や.*
+1;一;one;いち;ひと.*
+1;川;river;せん;かわ
+1;力;power, strength;りょく, りき;ちから
+1;上;above, up, over;じょう;うえ, あ, のぼ, うわ
+1;口;mouth;こう, く;くち
+1;下;below, down, under, beneath;か, げ;した, さが, くだ, お
+1;十;ten;じゅう;とお.*
+1;工;industry;こう;
+2;才;genius;さい;
+2;右;right;う, ゆう;みぎ
+2;立;stand;りつ;た.つ
+2;玉;ball;ぎょく;たま
+2;四;four;し;よん, よ
+2;小;small, little;しょう;ちい.さい, こ
+2;手;hand;しゅ;て
+2;目;eye;もく;め
+2;又;again;;また
+2;夕;evening;せき;ゆう
+2;月;moon, month;げつ, がつ;つき
+2;了;finish, complete, end;りょう;
+2;出;exit;しゅつ;で.る, だ.す
+2;六;six;ろく;む.つ
+2;王;king;おう;
+2;石;stone;せき;いし
+2;犬;dog;けん;いぬ
+2;天;heaven;てん;あま
+2;円;yen, round, circle;えん;まる.い
+2;刀;sword, katana;とう;かたな
+2;五;five;ご;いつ.つ
+2;千;thousand;せん;ち
+2;白;white;はく;しろ, しら
+2;土;soil, earth, ground, dirt;ど, と;つち
+2;文;writing, sentence;ぶん, もん;
+2;田;rice paddy, rice field, field;でん;た
+2;丸;circle, circular, round;がん;まる
+2;木;tree, wood;もく;き, こ
+2;火;fire;か;ひ, ほ
+2;子;child, kid;し, す;こ
+2;中;middle, in, inside, center;ちゅう;なか
+2;丁;street;ちょう;
+2;本;book, origin, real, main;ほん;もと
+2;々;repeater, repetition, reduplication, iteration mark;のま;のま
+2;日;sun, day;にち, じつ;ひ, か, び
+2;左;left;さ;ひだり
+2;正;correct;せい, しょう;ただ.しい, まさ.に
+2;水;water;すい;みず
+3;牛;cow;ぎゅう;うし
+3;公;public;こう;N/A
+3;切;cut;せつ;き.る
+3;太;fat;たい;ふと.い
+3;戸;door;こ;と
+3;少;few, a little;しょう;すこ.し
+3;矢;arrow;し;や
+3;母;mother, mom, mum;ぼ;はは
+3;万;ten thousand;まん, ばん;
+3;父;father, dad;ふ;ちち
+3;久;long time;きゅう;ひさ
+3;用;task, use;よう;もち.いる
+3;広;wide;こう;ひろ
+3;分;part, minute, separate;ぶん, ふん, ぶ;わ.かる, わ.ける
+3;友;friend;ゆう;とも
+3;方;direction, way;ほう;かた
+3;北;north;ほく;きた
+3;市;city;し;いち
+3;外;outside;がい;そと, はず
+3;引;pull;いん;ひ
+3;古;old;こ;ふる.い
+3;今;now;こん;いま
+3;台;machine;だい, たい;
+3;心;heart;しん;こころ
+3;生;life;せい, しょう;い.きる, なま, う.* なま, は, き
+3;午;noon;ご;
+3;元;origin;げん, がん;もと
+3;半;half;はん;なか.ば
+3;毛;fur, hair;もう;け
+3;兄;older brother, big brother, elder brother;きょう;あに
+3;内;inside, within;ない;うち
+3;冬;winter;とう;ふゆ
+3;止;stop;し;と.まる, や.む
+4;花;flower;か, け;はな
+4;竹;bamboo;;たけ
+4;他;other;た;ほか
+4;氷;ice;ひょう;こおり
+4;皿;plate, dish;;さら
+4;皮;skin;ひ;かわ
+4;虫;insect, bug;ちゅう, き;むし
+4;休;rest;きゅう;やす.み
+4;町;town;ちょう;まち
+4;糸;thread;し;いと
+4;耳;ear;じ;みみ
+4;不;not;ふ;
+4;車;car;しゃ;くるま
+4;赤;red;せき;あか
+4;村;village;そん;むら
+4;名;name, famous;めい, みょう;な
+4;主;master;しゅ;おも, ぬし
+4;見;see;けん;み
+4;気;energy, spirit;き, け;いき
+4;写;copy;しゃ;うつ.す, うつ.る
+4;代;substitute, replacement, period, age;だい;か, かわ.る, しろ
+4;仕;doing, do;し;つか.える
+4;貝;shellfish, shell, clam;;かい
+4;打;hit;だ;う, ぶ
+4;礼;thanks;れい;
+4;申;say humbly, say, humbly say;しん;もう
+4;号;number;ごう;
+4;央;central, center, centre;おう;
+4;足;foot, leg, sufficient;そく;あし, た.りる
+4;男;man;だん;おとこ
+4;字;letter, character, symbol;じ;
+4;早;early, fast, quick;そう;はや.い, さ
+4;年;year;ねん;とし
+4;平;flat, peace;へい, ひょう, びょう;たいら, ひら
+4;先;previous, ahead, past, former;せん;さき, まず
+4;百;hundred;ひゃく;
+4;世;generation, world, society;せ, せい;よ
+4;去;past;きょ, こ;さ.る
+5;肉;meat;にく;None
+5;学;study, learn, learning;がく;まな.ぶ
+5;同;same;どう;おな.じ
+5;体;body;たい;からだ
+5;声;voice;せい;こえ
+5;西;west;せい;にし
+5;空;sky;くう;そら, あ, から
+5;走;run;そう;はし.る
+5;金;gold;きん;かね
+5;雨;rain;う;あめ, あま
+5;谷;valley;こく;たに
+5;交;mix;こう;まじ, ま, か
+5;青;blue;しょう, せい;あお
+5;林;forest, woods;りん;はやし
+5;回;times, revolve;かい;まわ.＊
+5;行;go;こう, ぎょう;い.く, おこな.う, ゆ.く
+5;作;make;さく, さ;つく.る
+5;池;pond;ち;いけ
+5;里;home village, home town, hometown;り;さと
+5;社;company;しゃ;やしろ
+5;音;sound;おん;おと, ね
+5;会;meet;かい;あ.う
+5;売;sell;ばい;う
+5;麦;wheat;ばく;むぎ
+5;角;angle, corner;かく;かど
+5;色;color, colour;しき, しょく;いろ
+5;自;self;じ, し;
+5;毎;every;まい;ごと
+5;図;diagram;ず, と;え, はか.る
+5;米;rice, america;べい, まい; こめ
+5;来;come, next;らい;く.る
+5;近;near, close;きん;ちか.い
+5;当;right, success, correct;とう;あ.たる
+5;多;many, much, lots of;た;おお.い
+5;形;shape, appearance, form;けい;かた, かたち
+5;考;think, consider;こう;かんが
+5;草;grass, weed;そう;くさ
+5;言;say;げん, ごん;い.う, こと
+5;何;what;か;なに, なん
+5;光;sunlight, light;こう;ひかり, ひか.る
+5;羽;feather, feathers, wing, wings;;はね, は
+5;弟;younger brother, little brother;だい, で, てい;おとうと
+6;亡;deceased, death;ぼう;な.く
+6;安;relax, cheap;あん;やす.い
+6;両;both;りょう;
+6;知;know;ち;し.る
+6;明;bright;めい;あ, あか.るい
+6;歩;walk;ほ;ある.く
+6;店;shop, store;てん;みせ
+6;科;science;か;
+6;南;south;なん;みなみ
+6;活;lively;かつ;
+6;海;sea, ocean;かい;うみ
+6;死;death;し;し.ぬ
+6;羊;sheep;よう;ひつじ
+6;前;front, before;ぜん;まえ
+6;長;long, leader;ちょう;なが.い
+6;星;star;せい;ほし
+6;次;next;じ;つぎ
+6;有;have;ゆう, う;あ.る
+6;姉;older sister, big sister, elder sister;し;お.ねえ, あね, ねえ
+6;後;behind, after, back, rear;ご, こう;うし.ろ, あと, のち
+6;国;country;こく;くに
+6;京;capital;きょう;みやこ
+6;食;eat, meal;しょく;た.べる, く
+6;妹;younger sister, little sister;まい;いもうと
+6;地;earth, ground;ち, じ;
+6;夜;night, evening;や;よ, よる
+6;州;state, province, county;しゅう;
+6;点;point, decimal, decimal point;てん;つ.ける
+6;思;think, thought;し;おも.う
+6;直;fix, direct;ちょく, じき;なお.す
+6;画;drawing, painting;が, かく;
+6;向;yonder, facing;こう;む.き
+6;首;neck;しゅ;くび
+6;室;room;しつ;
+6;化;change;か;ば.ける, ば.かす
+6;茶;tea;ちゃ, さ;
+6;曲;music, bend;きょく;ま.げる, ま.がる
+6;全;all, whole;ぜん;すべ.て, まった.く
+6;血;blood;けつ;ち
+6;東;east;とう;ひがし
+7;札;bill, label, note;さつ;ふだ
+7;夏;summer;げ, か, が;なつ
+7;失;fault;しつ;うしな.う
+7;必;certain;ひつ;かなら.ず
+7;末;end;まつ;すえ
+7;校;school;こう;
+7;家;house, home;か, け;いえ, や, うち
+7;紙;paper;し;かみ
+7;魚;fish;ぎょ;さかな
+7;理;reason;り;ことわり
+7;鳥;bird;ちょう;とり
+7;船;boat, ship;せん;ふね
+7;週;week;しゅう;
+7;雪;snow;せつ;ゆき
+7;黄;yellow;おう;き
+7;由;reason;ゆう;よし, よ.る
+7;通;pass through;つう;とお.る, かよ.う
+7;高;tall, expensive, high;こう;たか.い
+7;未;not yet;み;ま.だ, いま.だ, ひつじ
+7;欠;lack;けつ;か.ける
+7;氏;family name, last name, surname;し;うじ
+7;黒;black;こく;くろ.い
+7;民;peoples, people, nation;みん;たみ
+7;付;attach;ふ;つ
+7;弱;weak;じゃく;よわ.い
+7;辺;area;へん;あた.り, べ
+7;組;group, association, team;そ;くみ
+7;強;strong, strength;きょう;つよ.い
+7;時;time, o'clock, hour;じ;とき
+7;以;by means of, by the means of, by way of, by the way of;い;
+7;教;teach;きょう;おし.える, おそ.わる
+7;風;wind, style;ふう;かぜ
+7;記;write down, record;き;しる.す
+8;森;forest, woods;しん;もり
+8;対;versus;たい;
+8;君;buddy;くん;きみ
+8;投;throw;とう;な
+8;役;service, duty;やく;
+8;買;buy;ばい;か
+8;馬;horse;ば;うま
+8;研;sharpen;けん;と
+8;絵;drawing, painting;え;
+8;楽;comfort, ease, pleasure;がく, らく;たの.しい
+8;話;talk, speak;わ;はな.す, はなし
+8;数;count, number, amount;すう;かぞ.える, かず
+8;所;place;しょ;ところ
+8;住;dwelling, reside, dwell;じゅう;す.む
+8;電;electricity;でん;
+8;反;anti;はん;
+8;答;answer, response, reply;とう;こた
+8;番;number in a series, turn, ordinal number;ばん;
+8;決;decide, decision;けつ;き.める
+8;医;medicine;い;
+8;間;interval, interval of time, time interval;かん, けん;あいだ, ま
+8;局;bureau, department;きょく;
+8;身;somebody, someone, body;しん;み
+8;合;suit, fit, join;ごう, がっ;あ, あい
+8;朝;morning;ちょう;あさ
+8;雲;cloud;うん;くも
+8;場;location, place;じょう;ば
+8;者;someone, somebody;しゃ;もの
+8;道;road, street, path, way;どう;みち
+8;支;support, branch;し;ささ.える
+8;究;research;きゅう;きわ.める
+8;助;help;じょ;たす, すけ
+9;度;degrees, occurrence;ど, たく;たび
+9;乗;ride;じょう;の
+9;負;lose;ふ;ま.ける, お.う
+9;県;prefecture;けん;
+9;重;heavy;じゅう, ちょう;おも.い, かさ, え
+9;物;thing;ぶつ, もつ;もの
+9;新;new;しん;あたら.しい, あら.た, にい
+9;使;use;し;つか.う
+9;勝;win;しょう;か.つ
+9;予;beforehand;よ;あらかじ
+9;泳;swim;えい;およ
+9;具;tool;ぐ;
+9;持;hold;じ;も
+9;送;send;そう;おく.る
+9;服;clothes, clothing;ふく;
+9;談;discuss;だん;
+9;美;beauty, beautiful;び;うつく.しい
+9;表;express;ひょう;あらわ.す, おもて
+9;返;return;へん;かえ.る, かえ.す
+9;界;world;かい;
+9;発;departure;はつ;
+9;客;guest;きゃく;
+9;待;wait;たい;ま
+9;部;part, department, club;ぶ;へ
+9;事;action, matter, thing;じ;こと, つか
+9;仮;temporary;か;かり
+9;受;accept, receive;じゅ;う
+9;実;truth, reality;じつ;み
+9;相;mutual;そう, しょう;あい
+9;屋;roof, shop, store;おく;や
+9;要;need;よう;い, かなめ
+9;苦;suffering;く;くる, にが
+9;和;peace, japanese style;わ, お;なご
+9;始;begin, start;し;はじ
+9;定;determine;てい, じょう;さだ
+10;農;farming, agriculture;のう;
+10;鳴;chirp;めい;な
+10;親;parent;しん;おや, した.しい
+10;集;collect, gather;しゅう;あつ.まる
+10;酒;alcohol;しゅ;さけ, さか
+10;速;fast;そく;はや.い
+10;軽;lightweight, light, light weight;けい;かる, かろ
+10;業;business;ぎょう;
+10;院;institution;いん;
+10;飲;drink;いん;の
+10;顔;face;がん;かお
+10;習;learn;しゅう;なら.う
+10;聞;hear;ぶん, もん;き.く
+10;最;most;さい;もっと
+10;転;revolve;てん;ころ.ぶ
+10;運;carry, luck;うん;はこ.ぶ
+10;鉄;iron;てつ;
+10;路;road;ろ;じ, みち
+10;葉;leaf, leaves;;は, ば
+10;漢;chinese, china;かん;
+10;進;advance;しん;すす.む
+10;横;side;おう;よこ
+10;語;language;ご;かた.る
+10;頭;head;ず, とう;あたま
+10;算;calculate, calculation;さん;そろ
+10;歌;song, sing;か;うた
+10;配;distribute;はい;くば.る
+10;起;wake up;き;お
+10;調;investigate, tone;ちょう;しら.べる
+10;開;open, opened;かい;あ.ける, ひら
+10;線;line;せん;
+10;病;sick, sickness, ill, illness;びょう;や, やまい
+10;終;end, finish;しゅう;おわ.り, お
+10;読;read;とう, どく;よ
+10;落;fall;らく;お.ちる, お.とす
+11;意;idea;い;
+11;神;god;しん;かみ
+11;成;become;せい;な.る
+11;味;flavor, taste, flavour;み;あじ
+11;初;first;しょ;はじ, はつ, そ, ぞ
+11;低;low;てい;ひく.い
+11;好;like;こう;す.き, この.む
+11;育;nurture, raise;いく;そだ, はぐく.む
+11;拾;pick up;;ひろ
+11;注;pour;ちゅう;そそ.ぐ, さ.す, つ.ぐ
+11;仲;relationship;ちゅう;なか
+11;特;special;とく;
+11;努;toil;ど;つと.める
+11;波;wave;は;なみ
+11;労;labor, labour;ろう;いたわ.る
+11;秒;second;びょう;
+11;級;rank, grade, level;きゅう;
+11;競;compete;きょう;きそ.*
+11;追;follow, chase;つい;お
+11;岸;coast, shore;がん;きし
+11;令;orders;れい;
+11;指;finger;し;ゆび, さ
+11;功;achievement, accomplishment;こう;
+11;働;work, labor, labour;どう;はたら.*
+11;別;separate;べつ;わか.*
+11;利;profit, benefit, advantage;り;き.く
+11;良;good;りょう;よ, い
+11;命;fate;めい, みょう;いのち
+11;争;conflict;そう;あらそ.う
+11;昔;long ago, long time ago;;むかし
+11;伝;transmit, tell;でん;つた, つて
+11;戦;war, battle;せん;たたか.*
+11;放;release;ほう;はな, ほう.る
+11;老;elderly;ろう;
+11;位;rank;い;くらい
+11;洋;western style, ocean;よう;
+11;共;together;きょう;とも
+11;便;convenience, convenient;べん, びん;たよ.*
+12;員;member;いん;
+12;階;floor, story, storey;かい;
+12;章;chapter;しょう;
+12;短;short;たん;みじか.い
+12;第;ordinal number prefix, ordinal prefix, number;だい;
+12;島;island;とう;しま
+12;深;deep;しん;ふか.*
+12;倍;double, times, multiply;ばい;
+12;温;warm;おん;あたた.*
+12;庭;garden;てい;にわ
+12;動;move;どう;うご.*
+12;息;breath;そく;いき
+12;根;root;こん;ね
+12;商;merchandise;しょう;あきな.い
+12;童;juvenile;どう;
+12;悲;sad;ひ;かな
+12;植;plant;しょく;う.*
+12;期;period of time, time period;き;
+12;勉;exertion;べん;
+12;寒;cold;かん;さむ
+12;旅;trip, travel;りょ;たび
+12;悪;bad, evil;あく, お;わる.い
+12;都;metropolis;と, つ;みやこ
+12;流;stream;りゅう, る;なが.*
+12;消;extinguish;しょう;き.*, け.*
+12;暑;hot, hot weather;しょ;あつ
+12;陽;sunshine, sunlight;よう;ひ
+12;球;sphere, ball;きゅう;たま
+12;着;wear, arrive;ちゃく;き, つ
+12;族;tribe, family;ぞく;
+12;湯;hot water;とう;ゆ
+12;泉;spring, fountain;せん;いずみ
+12;祭;festival;さい;まつり, まつ
+12;港;harbor, harbour, port;こう;みなと
+12;野;field;や;の
+12;歯;tooth, teeth;;は
+12;登;climb;とう, と;のぼ.る
+13;練;practice;れん;ね
+13;暗;dark;あん;くら.い, くれ.る
+13;謝;apologize, apologise;しゃ;あやま.る
+13;整;arrange, organize;せい;ととの.*
+13;映;reflect, reflection;えい;うつ, は
+13;詩;poem;し;し
+13;銀;silver;ぎん;
+13;館;public building;かん;
+13;士;samurai;し;さむらい
+13;課;section;か;
+13;然;nature;ぜん, ねん;しか, さ
+13;賞;prize;しょう;
+13;鏡;mirror;きょう;かがみ
+13;問;problem;もん;と, とん
+13;様;formal name title, formal name ender, manner;よう;さま
+13;想;concept;そう;
+13;億;hundred million;おく;
+13;橋;bridge;きょう;はし
+13;熱;heat, fever;ねつ;あつ.い
+13;養;foster;よう;やしな.う
+13;緑;green;りょく;みどり
+13;像;statue, image;ぞう;
+13;殺;kill;さつ;ころ.す
+13;疑;doubt;ぎ;うたが.う
+13;選;choose;せん;えら.ぶ
+13;料;fee, material;りょう;
+13;器;container, vessel;き;うつわ
+13;輪;wheel, ring, loop;りん;わ
+13;情;feeling, emotion;じょう;なさけ
+13;福;luck, fortune;ふく;
+13;感;feeling;かん;
+13;標;signpost;ひょう;しるし
+13;皆;all, everyone, everything, everybody;かい;みな, みんな
+13;願;request;がん;ねが, ねがい
+13;宿;lodge;しゅく;やど
+13;題;topic;だい;
+13;駅;station, train station;えき;
+14;例;example;れい;たと
+14;希;wish;き;まれ
+14;協;cooperation;きょう;None
+14;季;seasons;き;None
+14;固;hard;こ;かた.い
+14;周;circumference;しゅう;まわ.り
+14;求;request;きゅう;もと.める
+14;技;skill;ぎ;わざ
+14;格;status;かく;None
+14;能;ability;のう;None
+14;私;i, private;し;わたし
+14;骨;bone;こつ;ほね
+14;卒;graduate;そつ;None
+14;囲;surround;い;かこ.む
+14;望;hope;ぼう;のぞ.む
+14;約;promise;やく;None
+14;基;foundation;き;もと
+14;術;art;じゅつ;None
+14;参;participate;さん;まい.る
+14;的;target, al, ~al, like, ~like;てき;まと
+14;残;remainder;ざん;のこ.*
+14;雰;atmosphere;ふん;None
+14;妥;gentle;だ;None
+14;束;bundle;そく;たば
+14;折;fold, bend;せつ;お.る
+14;材;lumber, timber;ざい;None
+14;頑;stubborn;がん;None
+14;念;thought;ねん;None
+14;松;pine, pine tree;しょう;まつ
+14;完;perfect;かん;None
+14;芸;acting, art;げい;None
+14;性;gender, nature;せい, しょう;None
+15;寺;temple;じ;てら
+15;飯;meal, food;はん;めし
+15;築;construct, build;ちく;きず.く
+15;列;row;れつ, れ;None
+15;秋;autumn, fall;None;あき
+15;岩;boulder;がん;いわ
+15;帰;return, return home;き;かえ
+15;昼;noon;None;ひる
+15;建;build;けん;た.*
+15;坂;slope;はん;さか
+15;泣;cry;きゅう;な
+15;猫;cat;None;ねこ
+15;軍;army;ぐん;None
+15;英;england, english;えい;None
+15;信;believe, trust;しん;しん
+15;変;change, strange;へん;か.*
+15;仏;buddha;ぶつ;ほとけ
+15;式;ritual, ceremony, equation;しき;
+15;司;director;し;つかさど.る
+15;法;method, law;ほう;None
+15;毒;poison;どく;None
+15;昨;previous, yesterday;さく;None
+15;晩;night, evening;ばん;
+15;単;simple;たん;None
+15;晴;clear up;せい;は
+15;勇;courage, bravery, valor, valour;ゆう;いさ
+15;丈;height, ten feet;じょう;たけ
+15;紀;account, narrative;き;None
+15;浅;shallow;せん;あさ
+15;春;spring;しゅん;はる
+15;夫;husband;ふう, ふ;おっと
+15;計;measure, measurement;けい;はか.る
+15;区;district, ward;く;None
+16;面;surface, face;めん;おも, おもて
+16;係;connection;けい;かか, かかり
+16;冒;dare;ぼう;おか.す
+16;遠;far;えん;とお
+16;保;preserve, guarantee;ほ;たも.つ
+16;危;dangerous;き;あぶ.ない, あや
+16;笑;laugh;しょう;わら, え
+16;阪;heights, slope;はん;さか
+16;真;reality;しん;ま
+16;急;hurry;きゅう;いそ.ぐ
+16;典;rule;てん;None
+16;府;government;ふ;None
+16;喜;rejoice, delighted, pleased, happy;き;よろこ
+16;辞;quit;じ;や.める
+16;取;take;しゅ;と
+16;弁;dialect, speech;べん;None
+16;証;evidence, proof;しょう;あかし
+16;門;gates, gate;もん;None
+16;浴;bathe;よく;あ
+16;険;risky, steep;けん;けわ.しい
+16;守;protect;す, しゅ;まも.る, もり
+16;冗;superfluous, unnecessary, uselessness;じょう;None
+16;荷;luggage;か;に
+16;品;product, article, goods, products;ひん;しな
+16;専;specialty;せん;もっぱ.ら
+16;政;politics, government;せい;None
+16;園;garden, park;えん;None
+16;曜;weekday, day of the week;よう;None
+16;存;suppose;そん, ぞん;None
+16;書;write, writing;しょ;か.く
+16;留;detain;る, りゅう;と
+16;幸;happiness;こう;しあわ.せ, さいわ.い
+16;関;related, connected;かん;かか.わる, せき
+16;治;cure, heal, reign, rule;じ, ち;なお.す, なお.る
+16;箱;box;None;はこ
+17;恋;romance;れん;こい
+17;幻;illusion;げん;まぼろし
+17;底;bottom;てい;そこ
+17;虚;void;きょ, こ;むな.しい	
+17;鼻;nose;び;はな
+17;席;seat;せき;None
+17;塩;salt;えん;しお
+17;無;nothing;む, ぶ;な.い
+17;結;bind, tie;けつ;むす.ぶ
+17;果;fruit;か;くだ, は.たして
+17;梅;ume, japanese plum;ばい;うめ
+17;非;injustice, negative;ひ;
+17;是;absolutely;ぜ;None
+17;識;discerning, discriminating, know;しき;None
+17;官;government;かん;None
+17;因;cause;いん;よ
+17;警;warn, admonish;けい;None
+17;愛;love;あい;まな
+17;渉;ford;しょう;わた.る
+17;側;side;そく;がわ, そば
+17;常;normal, ordinary;じょう;つね
+17;覚;memorize, awake, memorise;かく;おぼ, さ
+17;干;dry, dry out;かん;ほ.す, ひ
+17;署;government office, political office, office;しょ;None
+17;細;thin;さい;ほそ, こま
+17;敗;failure, fail;はい;やぶ.れる
+17;栄;prosperity, flourish;えい;さか.える
+17;薬;medicine, drug, drugs;やく;くすり
+17;兵;soldier;へい, ひょう;None
+17;堂;hall, public chamber;どう;None
+17;察;guess;さつ;さっ.する
+17;原;original, fundamental, plain, field;げん;はら
+17;説;theory;せつ;と.く
+18;煙;smoke;えん;けむ.り
+18;験;test;けん;ため, ためし
+18;報;news, report;ほう;むく.いる
+18;弓;bow;きゅう;ゆみ
+18;訓;instruction;くん;よ.む
+18;汽;steam;き;None
+18;喫;consume;きつ;の.む
+18;句;paragraph;く;None
+18;僧;priest, monk;そう;None
+18;胸;chest;きょう;むね
+18;洗;wash;せん;あら.う
+18;達;attain, plural;たつ;たち
+18;種;kind, type;しゅ;たね, ぐさ
+18;脳;brain;のう;
+18;類;type, category, kind;るい;たぐ.い
+18;可;possible;か;None
+18;忘;forget;ぼう;わす.れる
+18;枚;flat objects counter, flat object, counter for flat objects;まい;None
+18;静;quiet;せい;しず.か
+18;借;borrow;しゃく;か.りる
+18;禅;zen, zen buddhism;ぜん;None
+18;焼;bake, cook, burn;しょう;や
+18;等;equal;とう;ひと.しい, など
+18;座;sit, seat;ざ;すわ.る
+18;祈;pray, prayer;き;いの.る
+18;告;announce;こく;つ.げる
+18;禁;prohibition;きん;
+18;試;try, attempt;し;こころ.みる, ため
+18;許;permit, allow;きょ;ゆる.す
+19;加;add;か;くわ.える
+19;笛;flute;てき;ふえ
+19;史;history;し;None
+19;易;easy;い, えき;やさ.しい
+19;若;young;じゃく;わか, も
+19;布;cloth;ふ;ぬの
+19;連;take along;れん;つ, つら
+19;比;compare;ひ;くら.べる
+19;順;order, sequence;じゅん;None
+19;節;season;せつ;ふし
+19;財;wealth;さい, ざい;None
+19;閥;clique, clan;ばつ;None
+19;舌;tongue;ぜつ;した
+19;宙;mid air;ちゅう;None
+19;混;mix;こん;ま.*
+19;暴;violence;ぼう;あば.れる
+19;団;group;だん, とん;None
+19;履;boots;り;は.く
+19;忙;busy;ぼう;いそが
+19;得;acquire;とく;え.る, う.る
+19;困;distressed, troubled;こん;こま
+19;善;morally good, good;ぜん;ぜん
+19;冊;books counter, books, counter for books, volumes counter, volumes, counter for volumes;さつ;None
+19;徒;junior, follower;と;None
+19;宇;outer space;う;None
+19;絡;entangle, coil around, entwine;らく;から.む
+19;歴;continuation;れき;へ.る
+19;乱;riot;らん;みだ.す
+19;容;form, appearance, shape, figure;よう;None
+19;詞;part of speech, speech particle, particle of speech, grammar particle;し;None
+19;改;renew;かい;あらた.*
+19;昆;descendants;こん;None
+19;続;continue;ぞく;つづ.く
+19;減;decrease;げん;へ.る
+20;経;passage of time, pass through, manage;けい;た.つ, へ.る
+20;飛;fly;ひ;と
+20;尻;butt;;しり
+20;率;percent, percentage;りつ, そつ;ひき.いる
+20;械;contraption;かい;かせ
+20;機;machine;き;はた
+20;災;disaster;さい;わざわ.い
+20;在;exist;ざい;None
+20;嫌;dislike;けん;いや, きら.い
+20;妻;wife;さい;つま
+20;圧;pressure;あつ;None
+20;倒;overthrow, collapse;とう;たお.す
+20;裕;abundant, plentiful;ゆう;None
+20;議;deliberation, discussion;ぎ;None
+20;穴;hole, cave;けつ;あな
+20;被;incur;ひ;かぶ.る
+20;害;damage, injury, harm;がい;None
+20;論;theory;ろん;None
+20;罪;guilt;ざい;つみ
+20;難;difficult;なん;むずか.しい
+20;個;individual;こ;None
+20;厚;thick;こう;あつ
+20;確;certain;かく;たし.か
+20;防;prevent, prevention;ぼう;ふせ.ぐ
+20;犯;crime;はん;おか.す
+20;妨;obstruct, impede;ぼう;さまた.げる
+20;余;surplus, excess;よ;あま.る
+20;臭;stinking, stinky, smelly;しゅう;くさ
+20;尾;tail;び;お, ぽ
+20;夢;dream;む;ゆめ
+20;震;earthquake, quake, shake;しん;ふる.える
+20;産;give birth, birth;さん;う.む
+21;資;resources;し;None
+21;判;judge;はん;None
+21;権;rights;けん;None
+21;設;establish;せつ;もう.ける
+21;評;evaluate;ひょう;None
+21;任;duty;にん;まか.せる
+21;批;criticism;ひ;None
+21;検;examine;けん;None
+21;敵;enemy;てき;かな.う, かたき
+21;際;occasion;さい;きわ
+21;企;plan;き;くわだ.てる
+21;責;blame;せき;せ.める
+21;増;increase;ぞう;ふ.える, ふ.やす, ま.す
+21;挙;raise;きょ;あ.がる
+21;務;task;む;つと.める
+21;件;matter, affair;けん;None
+21;総;whole;そう;
+21;岡;hill;None;おか
+21;認;recognize, recognise;にん;みと.める
+21;解;untie, solve;かい;と.く, と.ける
+21;義;righteousness;ぎ;None
+21;審;judge;しん;None
+21;済;come to an end;さい;す.ます, す.む
+21;委;committee;い;None
+21;素;element;す, そ;None
+21;断;cut off;だん;ことわ.る, た.つ
+21;税;tax;ぜい;None
+21;省;conserve;しょう, せい;はぶ.く
+21;条;clause;じょう;None
+21;派;sect;は;None
+21;査;inspect, investigate, inspection, investigation;さ;None
+21;制;control;せい;
+22;値;value;ち;ね, あたい
+22;応;respond;おう;None
+22;各;each;かく;おの
+22;誕;birth;たん;None
+22;提;present, submit;てい;
+22;坊;monk;ぼう;None
+22;置;put;ち;お.く
+22;案;plan;あん;None
+22;勢;force;せい;いきお.い
+22;営;manage;えい;いとな.む
+22;統;unite;とう;す.べる
+22;態;appearance;たい;わざ
+22;援;aid, assist;えん;None
+22;過;surpass;か;す.ぎ, あやま
+22;策;plan;さく;さく
+22;吸;suck, inhale;きゅう;す.う
+22;藤;wisteria;とう, どう;ふじ
+22;観;view;かん;み.る
+22;領;territory;りょう;None
+22;宮;shinto shrine, shrine, palace;きゅう;みや
+22;寝;lie down, lay down, sleep;しん;ね
+22;価;value;か;あたい
+22;賀;congratulations;が;None
+22;副;vice, side;ふく;None
+22;域;region, regional boundary, boundary;いき;
+22;姿;figure, shape, form;し;すがた
+22;罰;penalty, punishment;ばつ;ばつ
+22;費;expense, cost;ひ;つい.やす
+22;状;condition;じょう;None
+22;示;indicate, show;じ, し;しめ.す
+22;脱;undress;だつ;ぬ.ぐ
+23;収;obtain;しゅう;おさ.める
+23;停;halt;てい;None
+23;準;standard;じゅん;None
+23;師;teacher, expert, master;し;None
+23;革;leather;かく;かわ
+23;律;law;りつ;None
+23;裁;judge;さい;さば.く, た.つ
+23;鬼;demon;き;おに
+23;施;carry out;し;ほどこ.す
+23;割;divide;かつ;わり, わ
+23;崎;cape;き;さき
+23;護;defend;ご;None
+23;規;standard;き;None
+23;秀;excel;しゅう;ひい.でる
+23;宅;house, home;たく;None
+23;呼;call;こ;よ
+23;幹;tree trunk;かん;みき
+23;張;stretch;ちょう;は.る
+23;現;present time, present;げん;あらわ.*
+23;沢;swamp;たく;さわ
+23;則;rule;そく;のっと.る
+23;城;castle;じょう;しろ
+23;看;watch over;かん;None
+23;優;superior, gentle;ゆう;やさ.しい
+23;乳;milk;にゅう;None
+23;導;lead;どう;みちび.く
+23;職;employment;しょく;None
+23;俳;haiku;はい;None
+23;演;perform, performance;えん;None
+23;贅;luxury;ぜい;いぼ
+23;備;provide, equip;び;そな.える
+24;販;sell;はん;None
+24;量;quantity, amount;りょう;はか.る
+24;違;different;い;ちが
+24;額;amount, framed picture, forehead;がく;ひたい
+24;供;servant, companion;きょう;とも, そな.える
+24;象;elephant, phenomenon;しょう, ぞう;None
+24;質;quality;しつ, しち;None
+24;製;manufacture;せい;None
+24;腰;waist;よう;こし
+24;届;deliver;None;とど
+24;肩;shoulder;けん;かた
+24;庁;agency, government office;ちょう;None
+24;型;model, type;けい;かた
+24;載;publish;さい;の.せる, の.る
+24;管;pipe;かん;くだ
+24;視;look at;し;None
+24;差;distinction;さ;さ
+24;境;boundary;きょう;さかい
+24;武;military;ぶ;たけ
+24;述;mention;じゅつ;の.べる
+24;環;loop;かん;None
+24;展;expand;てん;のぶ, のび
+24;株;stocks, shares;しゅ;かぶ
+24;触;touch;しょく;さわ.る, ふ.れる
+24;輸;transport;ゆ;None
+24;祝;celebrate;しゅく;いわ.う
+24;燃;burn;ねん;も.*
+24;担;carry, bear;たん;にな.う, かつ.ぐ
+24;狭;narrow;きょう;せま, せば
+24;腕;arm;わん;うで
+24;層;layer;そう;None
+25;替;replace;たい;か
+25;補;supplement;ほ;おぎな.う
+25;模;imitation;も, ぼ;None
+25;居;alive;きょ;い
+25;含;include;がん;ふく.む
+25;況;condition;きょう;None
+25;影;shadow;えい;かげ
+25;限;limit;げん;かぎ.る
+25;捕;catch;ほ;つか.まる, とら.える
+25;景;scene;けい;None
+25;掛;hang;がい;か
+25;逮;apprehend;たい;None
+25;抜;extract;ばつ, はつ, はい;ぬ
+25;訟;lawsuit;しょう;None
+25;鮮;fresh;せん;あざ.やか
+25;属;belong;ぞく;None
+25;慣;accustomed;かん;な.れる
+25;絞;strangle;こう;し, しぼ
+25;捜;search;そう;さが.す
+25;隠;hide;いん;かく.*
+25;豊;plentiful;ほう;ゆた.か
+25;肥;obese;ひ;こ.える, こえ
+25;与;give;よ;あた.える
+25;満;full;まん;み
+25;効;effective;こう;き.く
+25;候;climate, candidate;こう;None
+25;構;set up, care;こう;かま.*
+25;輩;comrade;はい;
+25;渡;transit;と;わた
+25;巻;scroll;かん;ま.く
+25;訴;sue;そ;うった.える
+25;票;ballot;ひょう;None
+25;響;echo, reverberation, resound;きょう;ひび.く
+26;接;adjoin;せつ;つ.ぐ
+26;振;shake, wave;しん;ふ.る
+26;獣;beast, animal;じゅう;けもの
+26;徴;indication, sign;ちょう;None
+26;針;needle;しん;はり
+26;怪;suspicious;かい, け;あや.しい
+26;突;stab, thrust;とつ;つ.く
+26;再;again;さ, さい;ふたた.び
+26;障;hinder;しょう;さわ.る
+26;筆;writing brush;ひつ;ふで
+26;較;contrast;かく;None
+26;河;river;か;かわ
+26;菓;cake;か;None
+26;刺;stab;し;さ.*
+26;励;encourage;れい;はげ.*
+26;占;fortune, occupy;せん;うらな.い, しめる
+26;激;fierce, violent;げき;はげ.しい
+26;貯;savings;ちょ;たくわ.える
+26;創;create;そう;None
+26;往;depart;おう;None
+26;造;create;ぞう;つく.る
+26;故;circumstance, reason;こ;ゆえ
+26;復;restore;ふく;None
+26;独;alone;どく;ひと.り
+26;討;chastise;とう;None
+26;汗;sweat;かん;あせ
+26;授;instruct;じゅ;さず.ける
+26;豚;pork, pig;とん;ぶた
+26;郵;mail;ゆう;None
+26;従;obey;じゅう;したが.う
+26;我;i, me;が;われ
+26;鉛;lead;えん;なまり
+26;印;seal, mark;いん;しるし
+27;貸;lend;たい;か
+27;迫;urge, compel, coerce;はく;せま.る
+27;途;route;と;None
+27;退;retreat, reject;たい;しりぞ.く, ひ, ど, の
+27;痛;pain;つう;いた.い
+27;濃;thick;のう;こ.い
+27;胃;stomach;い;None
+27;眠;sleep;みん;ねむ.*
+27;迷;astray;めい;まよ.う
+27;極;extreme;きょく, ごく;きわ.める
+27;症;symptom;しょう;None
+27;給;salary;きゅう;たま.う
+27;端;edge;たん;はし
+27;就;settle in;しゅう;つ.く
+27;織;weave;しき, しょく;お.る
+27;締;tighten;てい;し
+27;昇;ascend;しょう;のぼ.る
+27;屈;yield;くつ;かが
+27;惑;misguided;わく;まど.う
+27;悩;worry;のう;なや
+27;睡;drowsy;すい;None
+27;段;steps, stairs;だん;None
+27;健;healthy;けん;None
+27;誘;invite;ゆう;さそ.う
+27;靴;shoes;か;くつ
+27;康;health;こう;None
+27;暇;spare time, free time;か;ひま
+27;怒;angry, anger;ど;おこ.る, いか.り
+27;訪;visit;ほう;たず.ねる, おとず.れる
+27;招;beckon;しょう;まね.く
+27;腹;belly, abdomen, stomach;ふく;はら, なか
+27;郎;guy;ろう;None
+28;浜;beach;ひん;はま
+28;潔;pure;けつ;いさぎよ.い
+28;衆;populace;しゅう;None
+28;巨;giant;きょ;None
+28;微;delicate;び;かす.か
+28;婦;wife;ふ;None
+28;逆;reverse;ぎゃく;さか.らう
+28;凍;frozen;とう;こお.る, こご.える
+28;奇;odd, strange;き;None
+28;麗;lovely;れい;うるわ.しい
+28;児;child;じ;こ
+28;移;shift;い;うつ.*
+28;妙;strange;みょう;たえ.なる
+28;稚;immature;ち;None
+28;撃;attack;げき;う.つ
+28;博;exhibition, gambling;はく, ばく;None
+28;録;record;ろく;None
+28;修;discipline;しゅう;おさ.まる
+28;清;pure;せい, しょう;きよ.い
+28;券;ticket;けん;None
+28;益;benefit;えき;None
+28;精;spirit;せい;None
+28;程;extent;てい;ほど
+28;憲;constitution;けん;None
+28;傘;umbrella;さん;かさ
+28;幼;infancy, child;よう;おさな.い
+28;隊;squad;たい;None
+28;綺;beautiful;き;None
+28;攻;aggression, attack, offence, offense;こう;せ.める
+28;並;line up;へい;なら.*, なみ
+28;絶;extinction, die out;ぜつ;た.*
+28;処;deal with;しょ;None
+28;庫;storage, warehouse;こ;くら
+28;冷;cool, cold;れい;つめ.たい, ひ, さ
+29;杯;cup of liquid, counter for cups;はい;None
+29;監;oversee;かん;None
+29;寄;approach;き;よ.る
+29;僚;colleague;りょう;None
+29;診;diagnose;しん;み.る
+29;雄;male, brave;ゆう;おす
+29;欧;europe;おう;None
+29;乾;dry;かん;かわ, ほ
+29;韓;korea;かん;None
+29;閣;the cabinet, cabinet;かく;None
+29;怖;scary;ふ;こわ.*
+29;烈;violent, intense;れつ;はげ.しい
+29;猛;fierce;もう;None
+29;略;abbreviation, abbreviate;りゃく;りゃく.す
+29;娘;daughter;None;むすめ
+29;宗;religion;しゅう;None
+29;江;inlet, bay;こう;え
+29;促;urge;そく;うなが.す
+29;催;sponsor;さい;もよお.す
+29;宴;banquet;えん;うたげ
+29;督;coach;とく;None
+29;詰;stuffed;きつ, きち;つ, づ
+29;臣;servant, retainer;しん, じん;None
+29;街;street;がい, かい;まち
+29;板;board;はん;いた
+29;添;append;てん;そ.える
+29;請;request;せい, しん, しょう;う.ける, こ.う
+29;索;search;さく;None
+29;緊;tense;きん;None
+29;壊;break;かい;こわ.*
+29;恐;fear;きょう;おそ.*, こわ.い
+29;航;navigation;こう;None
+29;積;accumulate;せき;つ.む, つ.もる
+30;盗;steal;とう;ぬす.む
+30;遊;play;ゆう;あそ
+30;詳;detailed;しょう;くわ.しい
+30;懐;nostalgia;かい;なつ
+30;系;lineage;けい;None
+30;版;edition;はん;None
+30;適;suitable;てき;None
+30;貧;poor;びん, ひん;まず.しい
+30;延;prolong;えん;のば.す, の.びる
+30;越;go beyond;えつ;こ.*
+30;符;token;ふ;None
+30;婚;marriage;こん;None
+30;旗;flag;き;はた
+30;押;push;おう;お
+30;渇;thirst;かつ;かわ
+30;魅;alluring;み;None
+30;快;pleasant;かい;こころよ.い
+30;照;illuminate;しょう;て.*
+30;覧;look at;らん;None
+30;飾;decorate;しょく;かざ.る
+30;枕;pillow;しん;まくら
+30;撮;photograph, photo;さつ;と.る
+30;浮;float;ふ;う, うわ
+30;翌;the following, following, next;よく;None
+30;乏;scarce;ぼう;とぼ.しい
+30;背;back, height;はい;せ, そむ.く
+30;更;again;こう;さら, ふ
+30;購;subscription;こう;None
+30;騒;boisterous;そう;さわ.ぐ
+30;預;deposit;よ;あず.ける
+30;漏;leak;ろう;も.らす, も.る
+31;豪;luxurious;ごう;None
+31;探;look for, search for;たん;さが.す, さぐ.る
+31;粉;powder;ふん;こな, こ
+31;融;dissolve;ゆう;None
+31;既;previously;き;すで
+31;編;knit;へん;あ.む
+31;棒;pole, rod, wooden pole;ぼう;ぼう
+31;華;showy;か;はな
+31;普;normal;ふ;None
+31;鑑;model;かん;None
+31;除;exclude;じょ;のぞ.く
+31;幾;how many, how much;き;いく
+31;倉;warehouse;そう;くら
+31;孫;grandchild;そん;まご
+31;径;diameter;けい;None
+31;嘆;sigh;たん;なげ.く
+31;尋;inquire;じん;たず.ねる
+31;驚;surprised;きょう;おどろ.*
+31;帯;belt;たい;おび
+31;散;scatter;さん;ち.*
+31;貨;freight;か;None
+31;脈;vein;みゃく;None
+31;陸;land;りく;None
+31;徳;virtue;とく;None
+31;偵;spy;てい;None
+31;掃;sweep;そう;は.く
+31;巣;nest;そう;す
+31;離;detach;り;はな.*
+31;似;resemble;ね, じ;に.る
+31;富;rich;ふ;と, とみ
+31;均;equal;きん;ひと.しい
+31;泥;mud;でい;どろ
+31;救;rescue;きゅう;すく.う
+31;菜;vegetable;さい;None
+31;墓;grave;ぼ;はか
+31;廊;corridor;ろう;None
+32;卵;egg;らん;たまご
+32;飼;domesticate;し;か
+32;複;duplicate;ふく;None
+32;秘;secret;ひ;ひ.める
+32;迎;welcome;げい;むか.える
+32;訳;translation, reason;やく;わけ
+32;眼;eyeball;がん;め
+32;序;preface;じょ;つい, ついで
+32;賛;agree;さん;None
+32;密;secrecy;みつ;ひそ.か
+32;績;exploits;せき;None
+32;銭;coin;せん;ぜに
+32;込;crowded;None;こ
+32;党;group;とう;None
+32;暖;warm;だん;あたた.かい
+32;雑;random, miscellaneous;ざつ, ぞう;None
+32;興;interest;きょう, こう;None
+32;欲;want;よく;ほ.しい
+32;染;dye;せん;しみ, そ.*, し.みる
+32;机;desk;None;つくえ
+32;志;intention;し;こころざし
+32;恩;kindness;おん;おん
+32;液;fluid;えき;None
+32;捨;throw away;しゃ;す
+32;永;eternity;えい;None
+32;桜;sakura, cherry tree;None;さくら
+32;汚;dirty;お;よご, きたな
+32;衛;defense;えい;None
+32;採;gather;さい;と.る
+32;傷;wound;しょう;きず, いた.める
+32;厳;strict;げん, ごん;きび.しい, おごそ.か
+32;祖;ancestor;そ;None
+32;酸;acid;さん;す
+33;宣;proclaim;せん;のたま.う
+33;装;attire;そう, しょう;よそお.う
+33;異;differ;い;こと.*
+33;著;author;ちょ;いちじる.しい, あらわ.す
+33;筋;muscle, tendon;きん;すじ
+33;皇;emperor;こう;None
+33;窓;window;そう;まど
+33;簡;simplicity;かん;None
+33;誌;magazine;し;None
+33;垂;dangle, drip;すい;た.*
+33;宝;treasure;ほう;たから
+33;拡;extend;かく;ひろ.がる
+33;灰;ashes;かい;はい
+33;納;supply;のう;おさ, なっ
+33;忠;loyalty;ちゅう;None
+33;盛;pile, heaps;せい, じょう;も.る, さか.ん
+33;砂;sand;さ;すな
+33;肺;lung;はい;はい
+33;蔵;storehouse;ぞう;くら
+33;諸;various;しょ;もろ
+33;蒸;steam;じょう;む.れる, む.らす
+33;賃;rent;ちん;None
+33;操;manipulate, chastity;そう;あやつ.る, みさお
+33;敬;respect;けい;うやま.う
+33;糖;sugar;とう;None
+33;閉;closed, close, closure;へい;し, と
+33;漠;desert, vague;ばく;None
+33;暮;livelihood;ぼ;く.*
+33;尊;revered;そん;とうと.い
+33;熟;ripen;じゅく;う.れる
+33;裏;backside;り;うら
+33;否;no;ひ;いな, いや
+34;射;shoot;しゃ;い.る, さ.す, う.つ
+34;沿;run alongside;えん;そ.う
+34;拝;worship;はい;おが.む
+34;粋;stylish;すい;いき
+34;聖;holy;せい;None
+34;磁;magnet;じ;None
+34;歓;delight;かん;None
+34;劇;drama;げき;None
+34;豆;beans;とう;まめ
+34;枝;branch;し;えだ
+34;爪;claw;そう;つま, つめ
+34;貴;valuable;き;とうと.い
+34;奴;dude;ど;やつ
+34;隷;slave;れい;None
+34;紅;deep red, crimson;こう;べに, くれない
+34;純;pure;じゅん;None
+34;幕;curtain;まく, ばく;とばり
+34;芋;potato;None;いも
+34;承;consent;しょう;うけたまわ.る
+34;揮;brandish;き;None
+34;損;loss;そん;そこ.なう
+34;推;infer;すい;お.す
+34;刻;carve;こく;きざ.む
+34;誤;mistake;ご;あやま.*
+34;丼;rice bowl;どん;どんぶり
+34;降;descend;こう;お.りる, ふ.る
+34;薦;recommend;せん;すす.*
+34;縮;shrink;しゅく;ちぢ, ちじ
+34;臓;internal organs;ぞう;None
+34;縦;vertical;じゅう;たて
+34;腐;rot;ふ;くさ.る
+34;源;origin;げん;みなもと
+34;吐;throw up, spit;と;は
+34;勤;work;きん;つと.*
+35;汁;soup;じゅう;しる
+35;彼;he;ひ;かれ, かの
+35;酢;vinegar;None;す
+35;舎;cottage;しゃ;None
+35;銅;copper;どう;あかがね
+35;酔;drunk;すい;よ.う
+35;破;tear;は;やぶ.*
+35;滞;stagnate;たい;とどこお.る
+35;亀;turtle;None;かめ
+35;炎;flame, big fire;えん;ほのお
+35;介;jammed in;かい;None
+35;厄;unlucky;やく;None
+35;湖;lake;こ;みずうみ
+35;紹;introduce;しょう;None
+35;講;lecture;こう;None
+35;互;mutual;ご;たが.い
+35;剣;sword;けん;つるぎ
+35;杉;cedar;None;すぎ
+35;鍋;pot;None;なべ
+35;払;pay;None;はら
+35;醤;soy sauce;しょう;None
+35;油;oil;ゆ;あぶら
+35;恥;shame;ち;は, はじ
+35;彫;carve;ちょう;ほ.る
+35;寿;lifespan;じゅ, す;ことぶき
+35;測;measure;そく;はか.る
+35;噌;boisterous;そ;None
+35;為;sake;い;ため, な.す, す.る
+35;遅;slow;ち;おそ.い, おく.*
+35;熊;bear;None;くま
+35;己;oneself;こ, き;おのれ
+35;獄;prison;ごく;None
+36;換;exchange;かん;か.える
+36;甘;sweet;かん;あま
+36;牙;fang, tusk;げ;きば
+36;舞;dance;ぶ;まい, ま.う
+36;般;generally;はん;None
+36;依;reliant, dependant;い;よ.る
+36;鹿;deer;ろく;か, しか
+36;遺;leave behind;い;のこ.す
+36;頼;trust;らい;たの, たよ
+36;超;ultra, super;ちょう;こ.*
+36;廃;obsolete;はい;すた
+36;債;debt;さい;None
+36;献;offer;けん, こん;たてまつ.る
+36;療;heal;りょう;None
+36;貿;trade;ぼう;None
+36;及;reach;きゅう;およ.*
+36;津;haven;しん;つ
+36;維;maintain;い;None
+36;縄;rope;じょう;なわ
+36;姓;surname, family name;せい, しょう;None
+36;伸;stretch;しん;の
+36;奈;nara;な;な
+36;幅;width;ふく;はば
+36;沖;open sea;ちゅう;おき
+36;伎;deed;き;わざ
+36;摘;pluck;てき;つ.む
+36;核;nucleus;かく;かく
+36;踏;step;とう;ふ.む
+36;旧;former;きゅう;None
+36;盟;alliance;めい;None
+36;将;commander;しょう;None
+36;継;inherit;けい;つ.ぐ
+36;諾;agreement;だく;None
+37;償;reparation;しょう;つぐな.う
+37;戻;return;れい;もど
+37;聴;listen;ちょう;き.く
+37;湾;gulf;わん;None
+37;遣;dispatch;けん;つか.う, や.る
+37;抗;confront;こう;あらが.う
+37;臨;look to;りん;のぞ.む
+37;塁;base, baseball base;るい;None
+37;陣;army base;じん;None
+37;旬;in season, time of month, season;しゅん, じゅん;None
+37;兆;omen;ちょう;None
+37;契;pledge;けい;None
+37;漁;fishing;ぎょ, りょう;あさ.る
+37;刑;punish;けい;None
+37;崩;crumble;ほう;くず.*
+37;爆;explode;ばく;は.ぜる
+37;患;afflicted;かん;わずら.う
+37;抵;resist;てい;None
+37;弾;bullet;だん;ひ.く, はず.む, たま
+37;恵;favor;え;めぐ.*
+37;跳;hop;ちょう;と.ぶ, は.ねる
+37;昭;shining;しょう;None
+37;跡;traces;せき;あと
+37;削;whittle down;さく;けず.る
+37;掲;display;けい;かか.げる
+37;闘;struggle;とう;たたか.う
+37;募;recruit;ぼ;つの.る
+37;葬;burial;そう;ほうむ.る
+37;抱;hug;ほう;だ, かか, いだ
+37;香;fragrance;こう, きょう;かお, か
+37;執;tenacious;しゅう, しつ;と.る
+37;狙;aim;そ;ねら.い
+38;致;do;ち;いた.す
+38;齢;age;れい;よわい
+38;慮;consider;りょ;おもんぱく, おもんぱか
+38;奥;interior;おう;おく
+38;奏;play music;そう;かな.でる
+38;盤;tray;ばん;ばん
+38;伴;accompany;はん;ともな.う
+38;却;contrary;きゃく;かえって
+38;称;title;しょう;とな.える, たた.える, ほめ.る
+38;賄;bribe;わい;まかな.う
+38;択;select;たく;えら.ぶ
+38;描;draw;びょう;か.く, えが.く
+38;緒;together;しょ;None
+38;緩;loose;かん;ゆる
+38;賂;bribe;ろ;None
+38;避;dodge, avoid;ひ;さ.ける, よ.ける
+38;贈;presents;ぞう;おく.*
+38;刊;edition;かん;None
+38;繰;spin;そう;く
+38;需;demand;じゅ;None
+38;懸;suspend;けん;か.*
+38;房;cluster;ぼう;ふさ
+38;併;join;へい;あわ.せる
+38;託;consign;たく;かこ.*
+38;妊;pregnant;にん;None
+38;娠;pregnant;しん;None
+38;扱;handle;きゅう;あつか
+38;逃;escape;とう;に.げる, のが.*, の.*
+38;傾;lean;けい;かたむ.*
+38;還;send back;かん;かえ.る
+38;抑;suppress;よく;おさ.える
+38;宜;best regards;ぎ;よろ
+39;雇;employ;こ;やと.う
+39;仙;hermit;せん;None
+39;奪;rob;だつ;うば
+39;拒;refusal;きょ;こば.む
+39;鋼;steel;こう;はがね
+39;埼;cape;き;さい
+39;充;allocate;じゅう;あ.てる, み.たす
+39;勧;recommend;かん;すす.める
+39;項;paragraph;こう;None
+39;岐;branch off;き, ぎ;None
+39;御;honorable;ご;お
+39;甲;turtle shell, a;こう, かん;か
+39;銃;gun;じゅう;None
+39;圏;range;けん;None
+39;控;abstain;こう;ひか
+39;免;excuse;めん;まぬか.れる
+39;埋;bury;まい;う
+39;祉;welfare;し;None
+39;謙;modesty;けん;None
+39;邦;home country;ほう;くに
+39;渋;bitter;じゅう;しぶ.い
+39;壁;wall;へき;かべ
+39;斐;patterned;い;None
+39;棋;chess piece;き;ご
+39;躍;leap;やく;おど.る
+39;稲;rice plant;None;いね, いな
+39;鈴;buzzer;りん;すず
+39;枠;frame;None;わく
+39;隆;prosperity;りゅう;None
+39;阜;mound;ふ;None
+39;群;flock;ぐん;む, むら, む.れ
+39;慎;humility;しん;つつし.む
+39;片;one sided;へん;かた
+39;譲;defer;じょう;ゆず.る
+40;排;reject;はい;None
+40;犠;sacrifice;ぎ;None
+40;薄;dilute;はく;うす.*
+40;雅;elegant;が;みや.び
+40;頻;frequent;ひん;しき.りに
+40;繁;overgrown;はん;しげ.*
+40;顧;review;こ;かえり.みる
+40;柱;pillar;ちゅう;はしら
+40;唱;chant;しょう;とな.える
+40;吹;blow;すい;ふ
+40;駆;gallop;く;か
+40;褒;praise;ほう;ほ.める
+40;兼;concurrently;けん;か.ねる
+40;巡;patrol;じゅん;めぐ.る
+40;堀;ditch;くつ;ほり
+40;戒;commandment;かい;いまし.める
+40;携;portable;けい;たずさ.わる
+40;敏;alert;びん;None
+40;獲;seize;かく;え.る
+40;透;transparent;とう;す.ける
+40;誉;honor;よ;ほ.める
+40;衝;collide;しょう;つ.く
+40;殿;milord, lord;でん;との, どの
+40;剤;dose;ざい;None
+40;駐;resident;ちゅう;None
+40;殖;multiply;しょく;ふ.える
+40;茂;luxuriant;も;しげ.る
+40;敷;spread;ふ;しき, し
+40;孝;filial piety;こう;None
+40;鋭;sharp;えい;するど.い
+40;俊;genius;しゅん;None
+40;隣;neighbor;りん;となり
+41;酎;sake;ちゅう, ちゅ;かも.す
+41;伺;pay respects;し;うかが
+41;樹;wood;じゅ;き
+41;蜜;honey;みつ;None
+41;徹;penetrate;てつ;てっ.する
+41;瀬;rapids, shallows;らい;せ
+41;措;set aside;そ;None
+41;包;wrap;ほう;つつ.み, くる.む
+41;撤;withdrawal;てつ;None
+41;蛍;firefly;けい;ほたる
+41;至;attain;し;いた.る
+41;墟;ruins;きょ;None
+41;蜂;bee;ほう;はち
+41;虎;tiger;こ;とら
+41;郷;hometown;きょう;None
+41;艦;warship;かん;None
+41;炭;charcoal;たん;すみ
+41;潜;conceal;せん;くぐ.る, ひそ.める, もぐ.る
+41;仁;humanity;じん;None
+41;拳;fist;けん;こぶし
+41;鉱;mineral;こう;あらがね
+41;衣;clothes;い, え;ころも
+41;偽;fake;ぎ;にせ, いつわ.る
+41;侵;invade;しん;おか.す
+41;棄;abandon;き;None
+41;拠;based on;きょ;よ.る
+41;遜;humble;そん;したが.う
+41;儀;ceremony;ぎ;None
+41;誠;sincerity;せい;まこと
+41;畑;field;;はたけ, はた
+42;括;fasten;かつ;くく.る
+42;荒;wild;こう;あ, あら
+42;堅;solid;けん;かた
+42;喪;mourning;そう;も
+42;綱;cable;こう;つな
+42;袋;sack;たい;ふくろ
+42;滑;slippery;かつ;すべ.る, なめ.らか
+42;揚;hoist;よう;あげ
+42;到;arrival;とう;None
+42;克;overcome;こく;None
+42;床;floor;しょう;ゆか, とこ
+42;哲;philosophy;てつ;None
+42;握;grip;あく;にぎ.る
+42;掘;dig;くつ;ほ.る
+42;弧;arc;こ;None
+42;暫;temporarily;ざん;しばら.く
+42;泊;overnight;はく;と.まる
+42;枢;hinge;すう;からくり
+42;析;analysis;せき;None
+42;網;netting;もう;あみ
+42;糾;twist;きゅう;None
+42;範;example;はん;None
+42;焦;char;しょう;こ.*, あせ.*
+42;潟;lagoon;せき;かた
+42;柄;pattern;へい;がら
+42;肝;liver;かん;きも
+42;芝;lawn;し;しば
+42;紛;distract;ふん;まぎ.*, まぐ.*
+42;軸;axis;じく;None
+42;挑;challenge;ちょう;いど.む
+42;双;pair;そう;ふた
+42;揺;shake;よう;ゆ.*
+42;斎;purification;さい;いつ.く
+43;裂;split;れつ;さ.*
+43;擦;grate;さつ;こす, す
+43;露;expose, dew;ろ, ろう;つゆ
+43;即;instant;そく;すなわ.ち
+43;垣;hedge, fence;None;かき
+43;珍;rare;ちん;めずら.しい
+43;籍;enroll;せき;None
+43;貢;tribute;こう;みつ.ぐ
+43;誰;who;None;だれ
+43;威;majesty;い;None
+43;沈;sink;ちん;しず.*
+43;摩;chafe;ま;さす.る
+43;柔;gentle;じゅう;やわ.*
+43;刷;printing;さつ;す.る
+43;趣;gist;しゅ;おもむき
+43;距;distance;きょ;None
+43;旨;point, delicious;し;うま.い, むね
+43;岳;peak;がく;たけ
+43;撲;slap;ぼく;None
+43;懲;chastise;ちょう;こ.りる
+43;炉;furnace;ろ;いろり
+43;滅;destroy;めつ;ほろ.*
+43;泰;peace;たい;None
+43;琴;harp;None;こと
+43;沼;bog;しょう;ぬま
+43;斉;simultaneous;せい;None
+43;慰;consolation;い;なぐさ.*
+43;筒;cylinder;とう;つつ
+43;潮;tide;ちょう;しお
+43;襲;attack;しゅう;おそ.う
+43;懇;courteous;こん;None
+43;滋;nourishing;じ;None
+43;牧;pasture;ぼく;まき
+43;封;seal, seal in, closing;ふう, ほう;None
+43;朗;bright;ろう;ほが.らか
+44;謎;riddle;None;なぞ
+44;芽;sprout;が;め
+44;涙;teardrop;るい;なみだ
+44;嵐;storm;None;あらし
+44;吉;good luck;きつ, きち;よし
+44;俺;i, me;None;おれ
+44;縁;edge;えん, ねん;ふち
+44;桃;peach;None;もも
+44;髪;hair;はつ;かみ
+44;梨;pear;None;なし
+44;僕;i, me;ぼく;None
+44;丘;hill;きゅう;おか
+44;斗;ladle, big dipper;と;None
+44;雷;thunder;らい;かみなり
+44;匹;small animal, small animal counter;;ひき
+44;竜;dragon;りゅう;たつ
+44;娯;recreation;ご;None
+44;缶;tin can, can;かん;None
+44;笠;conical hat;None;かさ
+44;寸;measurement;すん;None
+44;姫;princess;None;ひめ
+44;叫;shout;きょう;さけ.ぶ
+44;刃;blade;じん;は
+44;翼;wing;よく;つばさ
+44;塔;tower;とう;None
+44;侍;samurai;None;さむらい
+44;忍;endure;にん;しの.ぶ
+44;棚;shelf;ほう;たな
+44;粒;grains;りゅう;つぶ
+44;釣;fishing;ちょう;つ
+44;叱;scold;None;しか
+44;砲;cannon;ほう;None
+44;辛;spicy;しん;から.い, つら.い
+44;朱;vermillion;しゅ;あけ
+45;卓;table;たく;None
+45;磨;polish;ま;みが
+45;湿;damp;しつ;しめ.らせる
+45;翔;fly;しょう;かけ
+45;塊;lump;かい;かたまり
+45;凶;villain;きょう;None
+45;狩;hunt;しゅ;か
+45;鐘;bell;しょう;かね
+45;澄;lucidity;ちょう;す.*
+45;菌;bacteria;きん;None
+45;嫁;bride;か;よめ, とつ
+45;硬;stiff;こう;かた.い
+45;陰;shade;いん;かげ
+45;稼;earnings;か;かせ.ぐ
+45;溝;gutter;こう;みぞ
+45;滝;waterfall;None;たき
+45;狂;lunatic, crazy;きょう;くる.*
+45;賭;gamble;None;か
+45;裸;naked;ら;はだか
+45;塾;cram school;じゅく;None
+45;眺;stare;ちょう;なが.める
+45;呪;curse;None;のろ
+45;曇;cloudy;None;くも
+45;井;well;しょう;い
+45;舟;boat;しゅう;ふね, ふな
+45;矛;halberd;む;ほこ
+45;疲;exhausted;ひ;つか.れる
+45;暦;calendar;れき;こよみ
+45;也;considerably;None;なり
+45;脚;leg;きゃく;あし
+45;魂;soul, spirit;こん;たましい
+45;頃;approximate;None;ころ, ごろ
+45;霊;ghost;れい, りょう;None
+45;肌;skin;None;はだ
+45;嬢;miss;じょう;むすめ
+46;鳩;dove, pigeon;く;はと
+46;椅;chair;い;None
+46;孔;cavity, hole;こう;あな
+46;帝;sovereign;てい;みかど
+46;錬;tempering;れん;ね
+46;棟;pillar;とう;None
+46;租;tariff;そ;None
+46;墨;black ink, ink;None;すみ
+46;寮;dormitory;りょう;None
+46;鈍;dull;どん;にぶ.い, のろ.い
+46;穏;calm;おん;おだ.やか
+46;泡;bubbles;ほう;あわ
+46;碁;go;ご;None
+46;吾;i, me;ご;わが
+46;幽;secluded;ゆう;None
+46;零;zero;れい;こぼ.す
+46;寧;rather;ねい;むし.ろ
+46;斬;slice;ざん;き.る
+46;猿;monkey;えん;さる
+46;鍵;key;けん;かぎ
+46;瞳;pupil;とう, どう;ひとみ
+46;癖;habit;へき;くせ
+46;瞬;blink;しゅん;またた.く
+46;黙;shut up;もく;だま.る
+46;鍛;forge;たん;きた.える
+46;綿;cotton;めん;わた
+46;菊;chrysanthemum;きく;None
+46;阻;thwart;そ;はば.む
+46;俵;sack;ひょう;たわら
+46;庄;manor;しょう;None
+46;誇;pride;こ;ほこ.る
+46;架;shelf;か;か.*
+46;盆;lantern festival;ぼん;None
+46;歳;years old;さい, せい;None
+46;穂;head of plant, ear of plant;すい;ほ
+46;涼;cool;りょう;すず.しい
+46;魔;devil;ま;None
+47;粘;sticky;ねん;ねば.る
+47;芯;wick;しん;None
+47;唇;lips;しん;くちびる
+47;箸;chopsticks;ちゃく;はし
+47;滴;drip;てき;したた.る, しずく
+47;塀;fence;へい;None
+47;欺;deceit;ぎ;あざむ.く
+47;巾;towel;きん;None
+47;爽;refreshing;そう;さわ
+47;佐;help;さ;None
+47;瞭;clear;りょう;None
+47;哀;pathetic;あい;あわ.れ*
+47;詐;lie;さ;いつわ.る
+47;尺;shaku, japanese foot;しゃく;None
+47;伊;italy;い;だ
+47;霧;fog;む;きり
+47;炊;cook;すい;た.く
+47;婆;old woman;ば;ばあ
+47;如;likeness;じょ;ごと.し
+47;墜;crash;つい;None
+47;憎;hate;ぞう;にく.*
+47;帽;hat;ぼう;None
+47;扉;front door;ひ;とびら
+47;憩;rest;けい;いこ.い
+47;扇;folding fan;せん;おうぎ, あお.ぐ
+47;崖;cliff;がい;がけ
+47;恨;grudge;こん;うら.む
+47;掌;manipulate;しょう;てのひら
+47;挿;insert;そう;さ.す
+47;胴;torso;どう;None
+47;虹;rainbow;こう;にじ
+47;粧;cosmetics;しょう;None
+47;砕;smash;さい;くだ.*
+47;柳;willow;りゅう;やなぎ
+47;畳;tatami mat;じょう;たたみ
+47;幣;cash;へい;None
+48;脅;threaten;きょう;おど, おびや.かす
+48;辱;humiliate;じょく;はずかし.める
+48;闇;darkness;あん, おん;やみ
+48;盾;shield;じゅん;たて
+48;蓄;amass;ちく;たくわ.える
+48;蛇;snake;じゃ;へび
+48;悔;regret;かい;くや.しい, く.いる
+48;憶;recollection;おく;None
+48;溶;melt;よう;と.ける
+48;耐;resistant;たい;た.える
+48;輝;radiance;き;かがやき
+48;踊;dance;よう;おど
+48;賢;clever;けん;かしこ.い
+48;咲;blossom;しょう;さ
+48;脇;armpit;きょう;わき
+48;遂;accomplish;すい;と.げる, つい
+48;穫;harvest;かく;None
+48;殴;assault;おう;なぐ.る
+48;塗;paint;と;ぬる
+48;班;squad;はん;None
+48;培;cultivate;ばい;つちか.う
+48;彩;coloring, colouring;さい;いろど.る
+48;騎;horse;き;None
+48;麻;hemp;ま;あさ
+48;尽;exhaust;じん;つ.くす, つ.きる
+48;隙;crevice;げき;すき
+48;畜;livestock;ちく;None
+48;飢;starve;き;う.える
+48;霜;frost;None;しも
+48;貼;paste;ちょう;は
+48;鉢;bowl;はち;None
+48;帳;notebook;ちょう;とばり
+48;斜;diagonal;しゃ;なな.め
+48;迅;swift;じん;None
+48;蚊;mosquito;None;か
+48;灯;lamp;とう;あかり, とも
+48;餓;starve;が;う.える
+49;尼;nun;に;あま
+49;陛;highness;へい;None
+49;俗;vulgar;ぞく;None
+49;駒;chess piece;く;こま
+49;桑;mulberry;そう;くわ
+49;悟;comprehension;ご;さと.る
+49;抽;pluck;ちゅう;None
+49;拓;cultivation;たく;None
+49;誓;vow;せい;ちか.う
+49;紫;purple;し;むらさき
+49;剛;sturdy;ごう;None
+49;鶴;crane;かく;つる
+49;礎;foundation;そ;いしずえ
+49;壇;podium;だん;None
+49;珠;pearl;しゅ;たましい
+49;概;approximation;がい;おおむ.ね
+49;征;subjugate;せい;None
+49;劣;inferiority;れつ;おと.る
+49;淡;faint;たん;あわ.い
+49;煮;boil;しゃ;に
+49;衰;decline;すい;おとろ.える
+49;勘;intuition;かん;None
+49;奨;encourage;しょう;None
+49;潤;watered;じゅん;うるお.*, うる.む
+49;妃;princess, queen;ひ;None
+49;謀;conspire;ぼう;はか.る
+49;浸;immersed;しん;ひた.*
+49;唯;solely;ゆい;ただ
+49;刈;prune;None;か
+49;陶;pottery;とう;None
+49;拘;arrest;こう;かか.わる
+49;隔;isolate;かく;へだ.*
+49;覆;capsize, cover;ふく;おお.う, くつがえ.*
+50;簿;record book;ぼ;None
+50;墳;tomb;ふん;None
+50;巧;adept;こう;うま.い, たく
+50;壮;robust;そう;None
+50;漂;drift;ひょう;ただよ.う
+50;奮;stirred up;ふん;ふる.*
+50;仰;look up to;ぎょう;あお.ぐ
+50;銘;inscription;めい;None
+50;搬;transport;はん;None
+50;把;bundle, grasp;わ, は;None
+50;淀;eddy;None;よど
+50;伯;chief;はく, お;None
+50;堤;embankment;てい;つつみ
+50;訂;revise;てい;None
+50;廷;courts;てい;None
+50;堰;dam;せき;None
+50;彰;patent;しょう;None
+50;邪;wicked;じゃ;よこし.ま
+50;鰐;alligator;None;わに
+50;峰;summit;ほう;みね
+50;唐;china, sudden;とう;None
+50;亭;restaurant;てい;None
+50;疫;epidemic;えき;None
+50;晶;crystal;しょう;None
+50;洞;cave;どう;ほら
+50;涯;horizon;がい;はて
+50;后;empress;こう, ご;きさき
+50;翻;flip;ほん;ひるがえ.*
+50;駄;burdensome;だ, た;None
+50;諮;consult;し;はか.る
+50;偶;accidentally;ぐう;たま
+50;軌;rut;き;None
+50;漫;manga;まん;None
+50;蟹;crab;None;かに
+50;鬱;gloom;うつ;None
+51;聡;wise;そう;さと.い, みみざと.い
+51;頂;summit, humbly;ちょう;いただき, いただ.く
+51;枯;wither;こ;か
+51;沸;boil;ふつ;わ
+51;燥;dry up;そう;はしゃ.ぐ
+51;瓶;bottle;びん;かめ
+51;貞;chastity;てい;さだ
+51;隻;ship counter;せき;
+51;釈;explanation;しゃく, せき;す, とく, ゆる
+51;肪;obese, fat;ぼう;
+51;渦;whirlpool;か;うず
+51;喚;scream, yell;かん;わめ
+51;亮;clear;りょう;あきらか        
+51;浦;bay;ほ;うら
+51;塚;mound;ちょう;つか
+51;偉;greatness;い;えら
+51;召;call, eat;しょう;め.す
+51;挟;between;きょう, しょう;はさ
+51;耕;plow;こう;たがや.す
+51;濯;wash;たく;すす.ぐ, ゆす.ぐ, そそぐ
+51;軟;soft;なん;やわ
+51;脂;fat;し;あぶら        
+51;肯;agreement, consent;こう;がえんじ.る
+51;膚;skin;ふ;はだ
+51;郊;suburbs;こう;
+51;軒;house counter;けん;のき        
+51;邸;residence;てい;やしき
+51;郡;county, district;ぐん;こおり        
+51;隅;corner;ぐう;すみ
+51;媛;princess, beautiful woman;えん;ひめ
+51;苗;seedling, sapling;みょう, びょう;なえ, なわ
+51;玄;mysterious;げん;くろ
+51;慈;mercy;じ;いつく
+51;襟;collar;きん;えり
+51;蓮;lotus;れん;はす, はちす
+52;陥;cave in;かん;おちい, おとしい
+52;惰;lazy;だ;
+52;貫;pierce, sushi counter;かん;つらぬ, ぬき, ぬ
+52;怠;lazy, neglect;たい;おこた, なま
+52;遭;encounter, meet;そう;あ
+52;隼;falcon;しゅん, じゅん;はやぶさ
+52;唆;instigate;さ;そそのか, そそ
+52;芳;perfume;ほう;かんば
+52;恒;constant, always;こう;つね, つねに
+52;須;necessary;す, しゅ;すべから, すべし, ひげ, まつ, もち, もと
+52;殊;especially;しゅ;こと
+52;覇;leadership;は, はく;はたがしら
+52;呂;bath;ろ, りょ;せぼね
+52;茨;briar, thorn;し, じ;いばら
+52;慢;ridicule, laziness;まん;
+52;祥;auspicious;しょう;きざ, さいわ, つまび, よ
+52;乃;from;ない;すなわ, なんじ, の
+52;擁;embrace;よう;
+52;賠;compensation, compensate;ばい;
+52;孤;orphan, alone;こ;
+52;綾;design;りん;あや
+52;鎖;chain;さ;くさり, とざ
+52;噴;erupt;ふん;ふ
+52;偏;biased;へん;かたよ
+52;牲;offering;せい;
+52;秩;order, regularity;ちつ;
+52;倫;ethics;りん;
+52;膨;swell;ぼう;ふく
+52;糧;provisions;りょう, ろう;かて
+52;遇;treatment;ぐう;あ
+52;没;die;ぼつ, もつ;おぼ, しず, ない
+52;猟;hunting;りょう, れふ;かり, か
+52;颯;quick, sudden;さつ, そう;さっ.と
+52;輔;help;ふ, ほ;たす.ける
+52;陳;exhibit;ちん;ひ.ねる
+53;剰;surplus;じょう;あまつさえ, あま
+53;繊;fiber, slender;せん;
+53;惨;disaster;さん, ざん;みじ, いた, むご
+53;帥;commander;すい;
+53;胡;barbarian;こ, う, ご;なんぞ
+53;稿;draft;こう;したがき, わら
+53;壌;soil, earth;じょう;つち
+53;舗;shop, store;ほ;
+53;騰;inflation;とう;あが, のぼ
+53;緯;latitude;い;ぬき, よこいと
+53;曙;dawn;しょ;あけぼの
+53;艇;rowboat;てい;
+53;搭;board, embark;とう;
+53;披;expose;ひ;
+53;錦;brocade;きん;にしき
+53;瓜;melon;か, け;うり
+53;准;semi;じゅん;
+53;寛;tolerance;かん;くつろ.ぐ
+53;胞;cell, placenta;ほう;
+53;諭;admonish;ゆ;さと
+53;虐;oppress;ぎゃく;しいた
+53;徐;gently, gentle;じょ;おもむ
+53;諒;comprehend, reality;りょう;あきら.か, まことに
+53;据;install;きょ;す
+53;莉;jasmine;り, れい, らい;
+53;緋;scarlet;ひ;あか, あけ
+53;葵;hollyhock;き;あおい
+53;啓;enlighten;けい;さと, ひら
+53;蒙;darkness;もう, ぼう;おお, くら, こうむ
+53;浄;cleanse, purify;じょう, せい;きよ.い, きよ.める
+53;鯉;carp, koi;り;こい
+53;随;all;ずい;したが.う, まにま.に
+53;駿;speed;しゅん, すん;すぐ
+53;戴;receive;たい;いただ
+53;丹;rust colored, red;たん;に
+54;欄;column, space;らん;てすり        
+54;逸;deviate, elude;いつ;そ, はぐ
+54;紋;family crest;もん;
+54;践;practice, trample;せん;ふ
+54;茎;stem;きょう, けい;くき
+54;疾;rapid;しつ;はや
+54;茜;red dye;せん;あかね
+54;冠;crown, cap;かん;かんむり
+54;謡;noh chanting, noh chant;よう;うた
+54;且;also;しょ, しょう, そ;か
+54;愚;foolish;ぐ;おろ
+54;鎌;sickle, scythe;けん, れん;かま
+54;栞;bookmark;かん;しおり
+54;阿;flatter;あ, お;おもね, くま
+54;鯨;whale;げい;くじら
+54;庶;all, bastard;しょ;
+54;勲;merit;くん;いさお
+54;荘;villa;そう, しょう, ちゃん;あごそ, ほうき
+54;酬;repay;しゅう, しゅ, とう;むく
+54;卸;wholesale;しゃ;おろし, おろ
+54;栽;planting;さい;
+54;悠;leisure;ゆう;
+54;尚;furthermore, esteem;しょう;なお
+54;顕;appear, existing;けん;あきらか, あらわ
+54;呈;present, display;てい;
+54;粛;solemn;しゅく, すく;つつし
+54;疎;neglect, sparse;そ, しょ;うと, まば
+54;酷;cruel, unjust;こく;ひど
+54;叙;describe;じょ;つい, ついで
+54;痴;stupid;ち;おろか, し
+54;呆;shock;ほう;あき, おろか, ほけ, ぼ
+54;哺;nurse, suckle;ほ;ほぐく, ふく
+54;杏;apricot;あん, きょう, こう;あんず
+54;傲;proud;ごう;あなど, おご
+54;拐;kidnap;かい;
+55;粗;coarse, rough;そ;あら
+55;累;accumulate;るい;
+55;朴;simple, crude;ぼく;えのき, ほう, ほお
+55;之;this;し;これ
+55;憾;remorse, regret;かん;うら
+55;髄;marrow, bone marrow;ずい;
+55;赴;proceed, move on;ふ;おもむ
+55;那;what;な, だ;いかん, なに, なんぞ
+55;鎮;tranquilize;ちん;おさえ, しず
+55;奉;dedicate;ほう, ぶ;たてまつ, ほう, まつ
+55;傍;nearby, side;ぼう;かたわ, わき, おか, はた, そば
+55;佳;excellent, skilled;か;
+55;該;the above, that specifically;がい;
+55;郭;enclosure;かく;くるわ        
+55;愉;pleasant;ゆ;たの
+55;虜;captive;りょ, ろ;とりく, とりこ
+55;旦;dawn;たん, だん;あきら, あき, あさ, あした, ただし
+55;龍;imperial, dragon;りゅう, りょう, ろう;たつ
+55;憂;grief;ゆう;う, うれ
+55;惜;frugal;せき;お
+55;栃;horse chestnut;;とち
+55;悼;grieve, mourn;とう;いた
+55;癒;healing, cure;ゆ;い, いや
+55;尿;urine, pee;にょう;
+55;賓;vip, guest;ひん;
+55;循;circulation, sequential;じゅん;
+55;凝;congeal, freeze;ぎょう;こ, こご
+55;弥;increasing;び, み;や
+55;昌;prosperous, prosperity;しょう;さかん
+55;脊;stature, height;せき;せせい
+55;抹;erase;まつ;
+55;遼;distant;りょう;
+55;瑛;crystal;えい;
+55;栓;cork, plug;せん;
+55;伏;bow, lay;ふく;ふ
+56;悦;delight, joy;えつ;よろこ
+56;轄;control;かつ;くさび
+56;靖;peaceful;じょう, せい;やす
+56;蝶;butterfly;ちょう;
+56;窒;suffocate;ちつ;
+56;寂;lonely;じゃく, せき;さび, さみ
+56;弊;evil;へい;
+56;拍;beat;はく, ひょう;
+56;窮;destitute;きゅう, きょう;きわ
+56;猶;still;ゆう, ゆ;なお
+56;宰;manager;さい;
+56;呉;give, do for;ご;くれ, く
+56;舶;ship;はく;
+56;庸;common;よう;
+56;搾;squeeze;さく;しぼ
+56;縛;bind, restrain;ばく;しば
+56;縫;sew;ほう;ぬ
+56;恭;respect;きょう;うやうや
+56;凡;mediocre;ぼん, はん;おうよ.そ, およ.そ, すべ.て
+56;錯;confused, mixed;さく, しゃく;
+56;穀;grain;こく;
+56;陵;mausoleum, tomb;りょう;みささぎ
+56;弦;chord, bowstring;げん;つる
+56;遥;far off, far away;よう;はる
+56;洪;flood;こう;
+56;飽;bored, sated;ほう;あ
+56;摂;in addition;せつ, しょう;おさ, かね, と
+56;柴;brushwood, firewood;さい, し;しば
+56;嘉;esteem, praise;か;よい, よみ.する
+56;紳;gentleman;しん;
+56;碑;tombstone;ひ;いしぶみ
+56;尉;military officer, military rank;い, じょう;
+56;凛;cold;りん;きびし
+56;匠;artisan;しょう;たくみ
+56;智;wisdom;ち;
+57;醸;brew;じょう;かも
+57;腸;intestines, guts;ちょう;はらわた
+57;羅;spread out, arrange;ら;うすもの        
+57;喝;scold;かつ;
+57;膜;membrane;まく;
+57;弔;condolence, condolences;ちょう;とぶら.う, とむら.う
+57;遍;universal;へん;あまね
+57;萌;sprout;ほう;きざ, めばえ, も
+57;盲;blind;もう;めくら
+57;衡;equilibrium;こう;
+57;堕;degenerate;だ;お, くず
+57;鼓;beat;こ;つづみ
+57;烏;crow;うお;からす
+57;凸;convex, uneven;とつ;でこ
+57;凹;concave, hollow;おう;くぼ.む, へこ.む, ぼこ
+57;楓;maple;ふう;かえで
+57;乙;latter, b;おつ, いつ;おと, きのと
+57;伐;fell, attack;ばつ;う, き, そむ
+57;胎;womb, uterus;たい;
+57;峡;ravine;きょう, こう;はざま
+57;賊;robber;ぞく;
+57;旋;rotation, revolution;せん;
+57;槽;tank, vat;そう;ふね
+57;漬;pickle, soak;し;つ
+57;坪;two mat area;へい;つぼ
+57;紺;navy, dark blue;こん;
+57;俸;salary;ほう;
+57;閲;inspection;えつ;けみ
+57;款;article;かん;
+57;敢;daring;かん;あ
+57;酵;ferment;こう;
+57;哉;question mark, ?;さい;や, かな
+57;蒼;pale, blue;そう;あお
+57;瑠;lapis lazuli;る, りゅう;
+57;遮;intercept;しゃ;さえぎ
+58;慨;sigh;がい;
+58;陪;accompany;ばい;
+58;譜;genealogy, score;ふ;
+58;漣;ripples;れん, らん;さざなみ
+58;戯;play;ぎ, げ;ざ, じゃ, たわむ
+58;瑞;congratulations;すい, ずい;みず, しるし
+58;剖;divide;ぼう;
+58;酌;serve;しゃく;く
+58;菅;sedge;かん, けん;すげ
+58;扶;aid;ふ;たす
+58;憤;resent;ふん;いきどお
+58;硫;sulfur, sulpher;りゅう;
+58;赦;pardon;しゃ;
+58;窃;steal;せつ;ぬす, ひそ
+58;忌;mourning;き;い
+58;藩;fiefdom;はん;
+58;肖;resemblance;しょう;あやか
+58;奔;run, bustle;ほん;はし.る
+58;朽;rot, decay;きゅう;く
+58;椎;oak, oak tree;つい, すい;う, つち
+58;濁;muddy, impure;だく, じょく;にご
+58;殻;husk, shell;かく, こく, ばい;から, がら
+58;享;receive;きょう, こう;う
+58;媒;mediator;ばい;なこうど
+58;鶏;chicken;けい;とり, にわとり
+58;迭;alternate;てつ;
+58;絹;silk;けん;きぬ
+58;嘱;request, entrust;しょく;しょく.する, たの.む
+58;淑;graceful;しゅく;しと
+58;帆;sail;はん;ほ
+58;暁;dawn;きょう, ぎょう;あかつき, さと
+58;錠;lock;じょう;
+58;凌;endure;りょう;しの
+58;傑;greatness, excellence;けつ;すぐ
+58;璃;glassy;り;
+59;禍;evil, misfortune;か;わざわい
+59;崇;worship, revere;すう;あが
+59;侮;despise;ぶ;あなず, あなど
+59;叔;uncle, aunt;しゅく;
+59;拙;clumsy, unskillful;せつ;つたな
+59;吟;recital;ぎん;
+59;甚;very, great;じん;はなは
+59;篤;deliberate;とく;あつ
+59;紡;spinning, spin;ぼう;つむ
+59;卑;lowly, base;ひ;いや
+59;峠;ridge;;とうげ
+59;雌;female;し;めす, め, めん
+59;堪;endure;かん, たん;た, こた, こ
+59;姻;marry, matrimony;いん;
+59;浪;wander;ろう;
+59;遷;transition;せん;うつ, みやこがえ
+59;岬;cape;こう;みさき
+59;梓;wood block;し;あずさ        
+59;漆;lacquer, varnish;しつ;うるし
+59;曹;official;そう, ぞう;つかさ, ともがら, へや
+59;酪;dairy;らく;
+59;沙;sand;さ, しゃ;すな, よなげる
+59;亜;asia;あ;つ
+59;礁;reef;しょう;
+59;屯;barracks;とん;
+59;擬;imitate;ぎ;まが, もど
+59;睦;friendly;ぼく, もく;むつ
+59;閑;leisure;かん;
+59;詠;compose, recite;えい;よ, うた
+59;胆;guts;たん;きも
+59;憧;long for, yearn;しょう, とう, どう;あこが
+59;蔑;scorn, neglect;べつ;さげす
+59;慶;congratulate;けい;よろこ
+59;汰;select;た, たい;おご, にご, よな
+59;鋳;cast, casting;ちゅう;い
+60;湧;well, boil;ゆう, ゆ, よう;わ
+60;漸;gradually, steadily;ぜん;ようや, やや
+60;畔;shore;はん;あぜ, くろ, ほとり
+60;唄;shamisen song, song;ばい;うた
+60;廉;bargain;れん;
+60;寡;widow, minority;か;
+60;渓;valley;けい;たに, たにがわ
+60;煩;annoy, annoying;はん, ぼん;うるさ, わずら
+60;醜;ugly;しゅう;しこ, みにく
+60;升;grid, measure;しょう;ます
+60;殉;martyr;じゅん;
+60;痢;diarrhea;り;
+60;劾;censure;がい;
+60;桟;jetty, pier;さん, せん;かけはし
+60;婿;groom;せい;むこ
+60;慕;yearn for, adore;ぼ;した
+60;罷;quit, leave;ひ;や
+60;矯;correct, straighten;きょう;た
+60;某;certain, one, that person;ぼう;それがし, なにがし
+60;囚;criminal;しゅう;とら
+60;泌;secrete;ひ, ひつ;
+60;藍;indigo;らん;あい
+60;藻;seaweed;そう;も
+60;妄;reckless;もう, ぼう;みだ
+60;蛮;barbarian;ばん;えびす
+60;狐;fox;こ;きつね
+60;倹;thrifty, frugal, thrift;けん;つづまやか, つま
+60;逝;die;せい;い.く, ゆ.く
+60;匿;hide;とく;かくま.う
+60;拷;torture;ごう;
+60;坑;pit, hole;こう;
+60;謹;humble, discreet;きん;つつし
