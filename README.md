@@ -1,6 +1,6 @@
 # Kanji Poster
 
-![screenshot](screenshot.png)
+![screenshot](screenshot.jpg)
 
 A simple python script to generate the LaTeX source for a poster to show all [jōyō kanji](https://en.wikipedia.org/wiki/List_of_jōyō_kanji) as well as the extra kanji included in [WaniKani](https://www.wanikani.com).
 
