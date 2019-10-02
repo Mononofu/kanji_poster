@@ -12,7 +12,7 @@ I've also checked in an [example version](https://github.com/Mononofu/kanji_post
 
 ```bash
 # Generate the LaTeX files.
-python3 list_kanji.py
+python3 generate_tex.py
 
 # Compile everything into a pdf.
 pdflatex main.tex
