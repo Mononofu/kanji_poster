@@ -104,7 +104,8 @@ _SORT_INDICES = {
     '2k1K0': '2k1KO Index',
     'opt_vocab_sort': 'Opt Vocab Sort Index',
     'kanji_leaner_course': 'Kanji Learner Course Index',
-    'frequency': 'Freq.'
+    'frequency': 'Freq.',
+    'stroke_count': 'stroke count',
 }
 
 def add_sort_orders(kanji_info):
