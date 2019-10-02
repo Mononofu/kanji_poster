@@ -28,7 +28,7 @@ def read_wanikanji():
       return None
     return reading.split(',')[0]
 
-  with open('wanikani.csv') as f:
+  with open('data/wanikani.csv') as f:
     lines = f.read()
   for line in lines.strip().split('\n'):
     level, kanji, meaning, onyomi, kunyomi = line.split(';')
@@ -58,7 +58,7 @@ _KANJI_REPLACEMENTS = {
 
 def merge_with_joyo(kanji_info):
   # Dumped from https://en.wikipedia.org/wiki/List_of_jōyō_kanji.
-  with open('joyo_kanji.txt') as f:
+  with open('data/joyo_kanji.txt') as f:
     wiki_joyo = f.read()
   for line in wiki_joyo.strip().split('\n')[8:]:
     _, _, kanji, _, _, num_strokes, grade, _, meaning, readings = line.split('||')
@@ -85,7 +85,7 @@ def add_frequency(kanji_info):
   #  - Japanese Harry Potter from https://uk.shop.pottermore.com/collections/ebook/products/harry_potter_the_complete_collection_17_9781781106532
   #  - Stories from https://satorireader.com/
   #  - Articles from NHK Easy News: https://www3.nhk.or.jp/news/easy/
-  with open('kanji_frequency.json') as f:
+  with open('data/kanji_frequency.json') as f:
     kanji_frequency = json.load(f)
   unseen_kanji = []
   for kanji, info in kanji_info.items():
@@ -109,7 +109,7 @@ _SORT_INDICES = {
 
 def add_sort_orders(kanji_info):
   # From https://docs.google.com/spreadsheets/d/19zorQpMJi00-b6abuvE5uBAIsMMqWVrbeHD-bIrkggQ/
-  with open('kanken_heisig.csv') as f:
+  with open('data/kanken_heisig.csv') as f:
     reader = csv.DictReader(f)
     kanji_to_row = {row['Kanji']: row for row in reader}
 
@@ -123,7 +123,7 @@ def add_sort_orders(kanji_info):
 
 def add_radicals(kanji_info):
   # Load radical data.
-  with open('radicals.txt') as f:
+  with open('data/radicals.txt') as f:
     lines = [l for l in f.read().strip().split('\n') if not l.startswith('#')]
   kanji_to_radicals = {}
   for line in lines:
@@ -284,12 +284,12 @@ def main():
 
   add_sort_orders(kanji_info)
 
-  with open('footer.tex', 'w') as f:
+  with open('tex/footer.tex', 'w') as f:
     f.write('%d kanji covering %.2f\\%% of common Japanese text, ordered by frequency.' % (
         len(kanji_info),
         100 * sum(info.frequency for info in kanji_info.values())))
 
-  with open('kanji_grid.tex', 'w') as f:
+  with open('tex/kanji_grid.tex', 'w') as f:
     f.write(generate_poster_tex(kanji_info,
                                 make_sort_function(args.sort_by),
                                 minimal=args.minimal))

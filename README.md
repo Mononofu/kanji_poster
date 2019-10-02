@@ -21,3 +21,9 @@ pdflatex main.tex
 ## Dependencies
 
 The script uses [colour](https://pypi.org/project/colour/) to interpolate colors and [jaconv](https://pypi.org/project/jaconv/) to convert between hiragana and katakana for readings; you can install both from pip.
+
+To compile the pdf, you'll need the CJK LaTeX package; on Ubuntu you can install this with:
+
+```
+sudo apt-get install latex-cjk-all
+```
