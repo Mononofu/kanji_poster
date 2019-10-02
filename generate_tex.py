@@ -285,7 +285,7 @@ def main():
   add_sort_orders(kanji_info)
 
   with open('tex/footer.tex', 'w') as f:
-    f.write('%d kanji covering %.2f\\%% of common Japanese text, ordered by frequency.' % (
+    f.write('%d kanji covering %.2f\\%% of common Japanese text.' % (
         len(kanji_info),
         100 * sum(info.frequency for info in kanji_info.values())))
 
