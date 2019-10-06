@@ -9,7 +9,7 @@ In total the poster includes 2200 kanji. The script supports varies ways of sort
 I've also checked in example versions of the poster with different fonts that you can download. Note that this is still a work in progress, I have not checked the poster for correctness.
 
 - [IPAex Mincho](https://github.com/Mononofu/kanji_poster/blob/master/poster_mincho.pdf)
-- [IPAex Gothic](https://github.com/Mononofu/kanji_poster/blob/master/poster_gothich.pdf)
+- [IPAex Gothic](https://github.com/Mononofu/kanji_poster/blob/master/poster_gothic.pdf)
 - [Noto Sans](https://github.com/Mononofu/kanji_poster/blob/master/poster_noto_sans.pdf)
 - [Noto Serif](https://github.com/Mononofu/kanji_poster/blob/master/poster_noto_serif.pdf)
 
