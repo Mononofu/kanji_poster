@@ -1,8 +1,7 @@
 # -*- coding: utf-8
+import abc
 import argparse
-import collections
 import csv
-import itertools
 import json
 import math
 import re
@@ -20,6 +19,7 @@ class KanjiInfo(object):
     self.wanikani_level = wanikani_level
     self.grade = grade
     self.frequency = None
+    self.jlpt_level = None
     self.indices = {}
 
 
@@ -180,30 +180,55 @@ _MEANING_REPLACEMENTS = {
 }
 
 
+class Colorizer(abc.ABC):
+  """Interface for different ways of coloring kanji."""
+
+  @abc.abstractmethod
+  def choose_color(self, kanji, info):
+    pass
+
+
+class FrequencyColorizer(Colorizer):
+  """Colors kanji by the log of their frequency."""
+
+  def __init__(self, kanji_info, color_frequent, color_rare):
+    # Gradient from a very dark color for infrequent characters to a very light
+    # color for the most frequent ones.
+    self._n_steps = 20
+    self._colors = [
+        c.hex_l[1:] for c in colour.Color(color_rare).range_to(
+            colour.Color(color_frequent), self._n_steps)
+    ]
+    freqs = [self._log_freq(i) for i in kanji_info.values()]
+    self._min, self._max = min(freqs), max(freqs)
+
+  def _log_freq(self, info):
+    min_freq = -6
+    if info.frequency > 0:
+      return max(min_freq, math.log10(info.frequency))
+    return min_freq
+
+  def choose_color(self, kanji, info):
+    # Map the frequency to a log scale before indexing the color gradient.
+    index = int((self._log_freq(info) - self._min) / (self._max - self._min) *
+                (self._n_steps - 1))
+    return self._colors[index]
+
+
+_COLORING_METHODS = {
+    'frequency': FrequencyColorizer,
+}
+
+
 def color(text, c):
   return r'\textcolor[HTML]{%s}{%s}' % (c, text)
-
-
-# Gradient from a very dark color for infrequent characters to a very light
-# color for the most frequent ones.
-_COLORS = list(colour.Color('#0e254c').range_to(colour.Color('#6fa3fb'), 20))
-
-
-def choose_color(info):
-  # Map the frequency to a log scale before indexing the color gradient.
-  max_freq = -1
-  min_freq = -12
-  log_freq = math.log(info.frequency) if info.frequency > 0 else min_freq
-  log_freq = min(max_freq, max(log_freq, min_freq))
-  index = int((log_freq - min_freq) / (max_freq - min_freq) * len(_COLORS))
-  return _COLORS[index].hex[1:]
 
 
 def tikz_node(kind, x, y, text=''):
   return "\\node[%s] at (%f, %f) {%s};" % (kind, x, y, text)
 
 
-def render_kanji(kanji, info, x, y, minimal):
+def render_kanji(kanji, info, x, y, colorizer, minimal):
   """Renders a kanji and related information at the specified xy position."""
   nodes = []
 
@@ -211,7 +236,7 @@ def render_kanji(kanji, info, x, y, minimal):
     """Adds a tikz node with the specified offset from the center."""
     nodes.append(tikz_node(kind, x + dx, y + dy, text))
 
-  add_node('Kanji', 0, 0.5, color(kanji, choose_color(info)))
+  add_node('Kanji', 0, 0.5, color(kanji, colorizer.choose_color(kanji, info)))
 
   if not minimal:
     add_node('Square', 0, 0)
@@ -230,7 +255,11 @@ def render_kanji(kanji, info, x, y, minimal):
   return nodes
 
 
-def generate_poster_tex(kanji_info, sort_by, minimal=False, first_n=None):
+def generate_poster_tex(kanji_info,
+                        sort_by,
+                        colorizer,
+                        minimal=False,
+                        first_n=None):
   """Generates Tex to render all kanji in kanji_info in a big poster."""
   sorted_info = sorted(kanji_info.items(), key=lambda kv: sort_by(kv[1]))
   if first_n:
@@ -258,7 +287,7 @@ def generate_poster_tex(kanji_info, sort_by, minimal=False, first_n=None):
     row = int(i / num_cols)
     col = i % num_cols
 
-    nodes.extend(render_kanji(kanji, info, x(col), y(row), minimal))
+    nodes.extend(render_kanji(kanji, info, x(col), y(row), colorizer, minimal))
 
     if (i + 1) % num_cols == 0 or (i + 1) == len(kanji_info):
       # If this is the last character in the row, record the cumulative
@@ -296,6 +325,19 @@ def main():
       choices=['wanikani'] + list(_SORT_INDICES.keys()),
       default='heisig',
       help='How to sort Kanji on the poster, default=heisig')
+  parser.add_argument(
+      '--color_by',
+      choices=list(_COLORING_METHODS.keys()),
+      default='frequency',
+      help='How to color Kanji on the poster, default=frequency')
+  parser.add_argument(
+      '--color_rare',
+      default='#0e254c',
+      help='Color for the rare end of the kanji color gradient.')
+  parser.add_argument(
+      '--color_frequent',
+      default='#6fa3fb',
+      help='Color for the frequent end of the  kanji color gradient.')
   parser.add_argument('--minimal', default='minimal', action='store_true')
   parser.set_defaults(minimal=False)
 
@@ -311,6 +353,9 @@ def main():
 
   add_sort_orders(kanji_info)
 
+  colorizer = _COLORING_METHODS[args.color_by](kanji_info, args.color_frequent,
+                                               args.color_rare)
+
   with open('tex/footer.tex', 'w') as f:
     f.write('%d kanji covering %.2f\\%% of common Japanese text.' %
             (len(kanji_info),
@@ -319,7 +364,9 @@ def main():
   with open('tex/kanji_grid.tex', 'w') as f:
     f.write(
         generate_poster_tex(
-            kanji_info, make_sort_function(args.sort_by),
+            kanji_info,
+            make_sort_function(args.sort_by),
+            colorizer,
             minimal=args.minimal))
 
 
