@@ -6,7 +6,12 @@ A simple python script to generate the LaTeX source for a poster to show all [j≈
 
 In total the poster includes 2200 kanji. The script supports varies ways of sorting and coloring the kanji; in the screenshot above they are sorted according to the order they occur in [Remembering the Kanji](https://en.wikipedia.org/wiki/Remembering_the_Kanji_and_Remembering_the_Hanzi) by James Heisig and colored according to the log of their frequency in some common texts.
 
-I've also checked in an [example version](https://github.com/Mononofu/kanji_poster/blob/master/main.pdf) of the poster you can download. Note that this is still a work in progress, I have not checked the poster for correctness.
+I've also checked in example versions of the poster with different fonts that you can download. Note that this is still a work in progress, I have not checked the poster for correctness.
+
+- [IPAex Mincho](https://github.com/Mononofu/kanji_poster/blob/master/poster_mincho.pdf)
+- [IPAex Gothic](https://github.com/Mononofu/kanji_poster/blob/master/poster_gothich.pdf)
+- [Noto Sans](https://github.com/Mononofu/kanji_poster/blob/master/poster_noto_sans.pdf)
+- [Noto Serif](https://github.com/Mononofu/kanji_poster/blob/master/poster_noto_serif.pdf)
 
 ## Usage
 
