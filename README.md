@@ -15,15 +15,23 @@ I've also checked in an [example version](https://github.com/Mononofu/kanji_post
 python3 generate_tex.py
 
 # Compile everything into a pdf.
-pdflatex main.tex
+lualatex main.tex
 ```
 
 ## Dependencies
 
 The script uses [colour](https://pypi.org/project/colour/) to interpolate colors and [jaconv](https://pypi.org/project/jaconv/) to convert between hiragana and katakana for readings; you can install both from pip.
 
-To compile the pdf, you'll need the CJK LaTeX package; on Ubuntu you can install this with:
+To compile the pdf, you'll need the LuaLaTeX package; on Ubuntu you can install this with:
 
+```bash
+sudo apt install texlive-luatex
 ```
-sudo apt-get install latex-cjk-all
+
+Depending on the fonts you want to use, you might have to install some more packages:
+
+
+```bash
+# IPAexMincho and IPAexGothic
+sudo apt install fonts-ipaexfont
 ```

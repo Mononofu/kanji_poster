@@ -1,8 +1,12 @@
 \documentclass[12pt, a0paper, landscape]{tikzposter}
-\usepackage[utf8]{inputenc}
-\usepackage{CJKutf8}
 \usepackage{anyfontsize}
 \usepackage{hyperref}
+\usepackage{fontspec}
+
+% Tested fonts, availability may be different depending on your system:
+\setmainfont{IPAexMincho}
+% \setmainfont{IPAexGothic}
+% \setmainfont{Noto Sans CJK JP} % Similar to IPAexGothic
 
 \urlstyle{same}
 
@@ -15,19 +19,16 @@
 
 \tikzset{Square/.style={BaseStyle, draw=lightgray, ultra thin, align=center}}
 
-\tikzset{Kanji/.style={BaseStyle, font=\fontsize{36}{43}, align=center}}
+\tikzset{Kanji/.style={BaseStyle, font=\fontsize{36}{43}\selectfont, align=center}}
 
-\tikzset{SmallGreyText/.style={BaseStyle, font=\fontsize{8}{9}, text=gray}}
+\tikzset{SmallGreyText/.style={BaseStyle, font=\fontsize{8}{9}\selectfont, text=gray}}
 \tikzset{Onyomi/.style={SmallGreyText, align=left}}
 \tikzset{Kunyomi/.style={SmallGreyText, align=right}}
 \tikzset{Meaning/.style={SmallGreyText, align=center, font=\scriptsize}}
 
 \begin{document}
 
-
-\begin{CJK}{UTF8}{min}
 \input{tex/kanji_grid}
-\end{CJK}
 
 \node [above right,outer sep=10pt,minimum width=\paperwidth,align=center] at (bottomleft) {
   \input{tex/footer}
