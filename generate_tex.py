@@ -156,6 +156,17 @@ def add_radicals(kanji_info):
     print('failed to find radicals for: ', ', '.join(unseen_kanji))
 
 
+def add_jlpt_level(kanji_info):
+  # Data from https://www.nihongo-pro.com/kanji-pal/list/jlpt
+  with open('data/jlpt.json') as f:
+    jlpt = json.load(f)
+  for level, kanji_list in jlpt.items():
+    level = int(level)
+    for kanji in kanji_list:
+      if kanji in kanji_info:
+        kanji_info[kanji].jlpt_level = level
+
+
 # Some of the meanings are too long to fit in one line, so we replace them with
 # a shorter version.
 _MEANING_REPLACEMENTS = {
@@ -310,6 +321,8 @@ def make_sort_function(index):
   def get_key(info):
     if index == 'wanikani':
       key = info.wanikani_level or 61
+    if index == 'jlpt':
+      key = 5 - (info.jlpt_level or 0)
     else:
       key = info.indices.get(index, 100000)
     return (key, 1 - info.frequency)
@@ -322,7 +335,7 @@ def main():
       description="Generate kanji poster LaTeX source")
   parser.add_argument(
       '--sort_by',
-      choices=['wanikani'] + list(_SORT_INDICES.keys()),
+      choices=['wanikani', 'jlpt'] + list(_SORT_INDICES.keys()),
       default='heisig',
       help='How to sort Kanji on the poster, default=heisig')
   parser.add_argument(
@@ -346,6 +359,7 @@ def main():
   kanji_info = read_wanikanji()
   merge_with_joyo(kanji_info)
   add_frequency(kanji_info)
+  add_jlpt_level(kanji_info)
 
   # We don't use radical data at the moment, but it could be useful to
   # sort/group Kanji.
