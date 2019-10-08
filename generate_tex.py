@@ -26,20 +26,19 @@ class KanjiInfo(object):
 def read_wanikanji():
   kanji_info = {}
 
-  def first_reading(reading):
+  def get_readings(reading):
     if not reading or reading in ['None', 'N/A']:
-      return None
-    return reading.split(',')[0]
+      return []
+    return reading.split(',')
 
   with open('data/wanikani.csv') as f:
     lines = f.read()
   for line in lines.strip().split('\n'):
     level, kanji, meaning, onyomi, kunyomi = line.split(';')
-    kanji_info[kanji] = KanjiInfo(
-        meaning,
-        first_reading(onyomi),
-        first_reading(kunyomi),
-        wanikani_level=int(level))
+    kanji_info[kanji] = KanjiInfo(meaning,
+                                  get_readings(onyomi),
+                                  get_readings(kunyomi),
+                                  wanikani_level=int(level))
 
   return kanji_info
 
@@ -83,11 +82,7 @@ def merge_with_joyo(kanji_info):
       onyomi = [r for r in readings if r == jaconv.hira2kata(r)]
       kunyomi = [r for r in readings if r == jaconv.kata2hira(r)]
 
-      kanji_info[kanji] = KanjiInfo(
-          meaning,
-          onyomi[0] if onyomi else None,
-          kunyomi[0] if kunyomi else None,
-          grade=grade)
+      kanji_info[kanji] = KanjiInfo(meaning, onyomi, kunyomi, grade=grade)
 
 
 def add_frequency(kanji_info):
@@ -193,7 +188,6 @@ _MEANING_REPLACEMENTS = {
 
 class Colorizer(abc.ABC):
   """Interface for different ways of coloring kanji."""
-
   @abc.abstractmethod
   def choose_color(self, kanji, info):
     pass
@@ -201,7 +195,6 @@ class Colorizer(abc.ABC):
 
 class FrequencyColorizer(Colorizer):
   """Colors kanji by the log of their frequency."""
-
   def __init__(self, kanji_info, color_frequent, color_rare):
     # Gradient from a very dark color for infrequent characters to a very light
     # color for the most frequent ones.
@@ -231,6 +224,16 @@ _COLORING_METHODS = {
 }
 
 
+def format_readings(readings, convert, max_chars=6):
+  candidates = []
+  for reading in readings:
+    reading = reading.strip().replace('-', '.')
+    if sum(len(c) for c in candidates) + len(reading) >= max_chars:
+      break
+    candidates.append(reading)
+  return '・'.join(convert(c) for c in candidates)
+
+
 def color(text, c):
   return r'\textcolor[HTML]{%s}{%s}' % (c, text)
 
@@ -253,10 +256,12 @@ def render_kanji(kanji, info, x, y, colorizer, minimal):
     add_node('Square', 0, 0)
 
     if info.onyomi:
-      add_node('Onyomi', 0.05, 0.1, jaconv.hira2kata(info.onyomi))
+      onyomi = format_readings(info.onyomi, jaconv.hira2kata)
+      add_node('Onyomi', 0.05, 0.1, '\\hbox{\\tate %s}' % onyomi)
 
     if info.kunyomi:
-      add_node('Kunyomi', -0.05, 0.1, info.kunyomi)
+      kunyomi = format_readings(info.kunyomi, jaconv.kata2hira)
+      add_node('Kunyomi', -0.05, 0.1, '\\hbox{\\tate %s}' % kunyomi)
 
     meaning = info.meaning.split(',')[0]
     if kanji in _MEANING_REPLACEMENTS:
@@ -311,8 +316,8 @@ def generate_poster_tex(kanji_info,
   for row in range(int(math.ceil(len(kanji_info) / num_cols))):
     nodes.append(
         tikz_node('Meaning', x(-1),
-                  y(row) + 1.2, '%d - %d' % (row * num_cols + 1,
-                                             (row + 1) * num_cols)))
+                  y(row) + 1.2,
+                  '%d - %d' % (row * num_cols + 1, (row + 1) * num_cols)))
 
   return '\n'.join(nodes)
 
@@ -333,11 +338,11 @@ def make_sort_function(index):
 def main():
   parser = argparse.ArgumentParser(
       description="Generate kanji poster LaTeX source")
-  parser.add_argument(
-      '--sort_by',
-      choices=['wanikani', 'jlpt'] + list(_SORT_INDICES.keys()),
-      default='heisig',
-      help='How to sort Kanji on the poster, default=heisig')
+  parser.add_argument('--sort_by',
+                      choices=['wanikani', 'jlpt'] +
+                      list(_SORT_INDICES.keys()),
+                      default='heisig',
+                      help='How to sort Kanji on the poster, default=heisig')
   parser.add_argument(
       '--color_by',
       choices=list(_COLORING_METHODS.keys()),
@@ -372,16 +377,15 @@ def main():
 
   with open('tex/footer.tex', 'w') as f:
     f.write('%d kanji covering %.2f\\%% of common Japanese text.' %
-            (len(kanji_info),
-             100 * sum(info.frequency for info in kanji_info.values())))
+            (len(kanji_info), 100 * sum(info.frequency
+                                        for info in kanji_info.values())))
 
   with open('tex/kanji_grid.tex', 'w') as f:
     f.write(
-        generate_poster_tex(
-            kanji_info,
-            make_sort_function(args.sort_by),
-            colorizer,
-            minimal=args.minimal))
+        generate_poster_tex(kanji_info,
+                            make_sort_function(args.sort_by),
+                            colorizer,
+                            minimal=args.minimal))
 
 
 if __name__ == '__main__':
