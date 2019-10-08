@@ -30,7 +30,7 @@ The script uses [colour](https://pypi.org/project/colour/) to interpolate colors
 To compile the pdf, you'll need the LuaLaTeX package; on Ubuntu you can install this with:
 
 ```bash
-sudo apt install texlive-luatex
+sudo apt install texlive-full texlive-luatex
 ```
 
 Depending on the fonts you want to use, you might have to install some more packages:
