@@ -4,11 +4,15 @@
 \usepackage{fontspec}
 \usepackage{luatexja-fontspec}
 
+% Set font for English text.
+\setmainfont{Noto Sans}
+
+% Set font for Japanese text.
 % Tested fonts, availability may be different depending on your system:
-\setmainfont{IPAexMincho}
-% \setmainfont{IPAexGothic}
-% \setmainfont{Noto Serif CJK JP} % Similar to IPAexMincho
-% \setmainfont{Noto Sans CJK JP} % Similar to IPAexGothic
+\setmainjfont{IPAexMincho}
+% \setmainjfont{IPAexGothic}
+% \setmainjfont{Noto Serif CJK JP} % Similar to IPAexMincho
+% \setmainjfont{Noto Sans CJK JP} % Similar to IPAexGothic
 
 \urlstyle{same}
 
@@ -23,10 +27,10 @@
 
 \tikzset{Kanji/.style={BaseStyle, font=\fontsize{36}{43}\selectfont, align=center}}
 
-\tikzset{SmallGreyText/.style={BaseStyle, font=\fontsize{8}{9}\selectfont, text=gray}}
+\tikzset{SmallGreyText/.style={BaseStyle, font=\fontsize{7}{8.2}\selectfont, text=gray}}
 \tikzset{Onyomi/.style={SmallGreyText, align=left}}
 \tikzset{Kunyomi/.style={SmallGreyText, align=right}}
-\tikzset{Meaning/.style={SmallGreyText, align=center, font=\scriptsize}}
+\tikzset{Meaning/.style={SmallGreyText, align=center}}
 
 \begin{document}
 

@@ -165,7 +165,6 @@ def add_jlpt_level(kanji_info):
 # Some of the meanings are too long to fit in one line, so we replace them with
 # a shorter version.
 _MEANING_REPLACEMENTS = {
-    '賀': 'congratulate',
     '醒': 'disillusioned',
     '餅': 'mochi',
     '麓': 'foothills',
@@ -175,9 +174,8 @@ _MEANING_REPLACEMENTS = {
     '緻': 'fine',
     '箇': 'counters',
     '楷': 'printed style',
-    '弟': 'little brother',
     '番': 'number (series)',
-    '第': 'ordinal number',
+    '第': 'No.',
     '様': 'Mr., Mrs.',
     '億': '100 million',
     '署': 'govt. office',
@@ -228,7 +226,7 @@ def format_readings(readings, convert, max_chars=6):
   candidates = []
   for reading in readings:
     reading = reading.strip().replace('-', '.')
-    if sum(len(c) for c in candidates) + len(reading) >= max_chars:
+    if sum(len(c) + 1 for c in candidates) + len(reading) > max_chars:
       break
     candidates.append(reading)
   return '・'.join(convert(c) for c in candidates)
@@ -265,6 +263,8 @@ def render_kanji(kanji, info, x, y, colorizer, minimal):
 
     meaning = info.meaning.split(',')[0]
     if kanji in _MEANING_REPLACEMENTS:
+      print('replacing reading for %s: %s => %s' %
+            (kanji, meaning, _MEANING_REPLACEMENTS[kanji]))
       meaning = _MEANING_REPLACEMENTS[kanji]
     add_node('Meaning', 0, 1.75, meaning)
 
