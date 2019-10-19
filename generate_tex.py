@@ -238,8 +238,11 @@ class FrequencyColorizer(Colorizer):
 
   def choose_color(self, kanji, info):
     # Map the frequency to a log scale before indexing the color gradient.
-    index = int((self._log_freq(info) - self._min) / (self._max - self._min) *
-                (self._n_steps - 1))
+    return self.color_fraction(
+        (self._log_freq(info) - self._min) / (self._max - self._min))
+
+  def color_fraction(self, fraction):
+    index = int(fraction * (self._n_steps - 1))
     return self._colors[index].replace('#', '')
 
   def _darken_color(self, hex_color):
@@ -409,6 +412,13 @@ def main():
     f.write('%d kanji covering %.2f\\%% of common Japanese text.' %
             (len(kanji_info), 100 * sum(info.frequency
                                         for info in kanji_info.values())))
+    f.write(r' Data from \url{https://www.wanikani.com} and '
+            r'\url{https://en.wikipedia.org/wiki/List_of_joyo_kanji}.')
+    f.write(' Kanji colors using colormap %s, most to least frequent: ' %
+            (args.colormap))
+    steps = 15
+    for i in range(steps + 1):
+      f.write(color('█', colorizer.color_fraction((steps - i) / steps)))
 
   with open('tex/kanji_grid.tex', 'w') as f:
     f.write(

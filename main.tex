@@ -9,9 +9,9 @@
 
 % Set font for Japanese text.
 % Tested fonts, availability may be different depending on your system:
-\setmainjfont{IPAexMincho}
+% \setmainjfont{IPAexMincho}
 % \setmainjfont{IPAexGothic}
-% \setmainjfont{Noto Serif CJK JP} % Similar to IPAexMincho
+\setmainjfont{Noto Serif CJK JP} % Similar to IPAexMincho
 % \setmainjfont{Noto Sans CJK JP} % Similar to IPAexGothic
 
 \urlstyle{same}
@@ -36,9 +36,10 @@
 
 \input{tex/kanji_grid}
 
-\node [above right,outer sep=10pt,minimum width=\paperwidth,align=center] at (bottomleft) {
+\node [above right,outer sep=0pt,minimum width=\paperwidth,align=center] at (bottomleft) {
   \input{tex/footer}
-  Kanji data from \url{https://www.wanikani.com} and \url{https://en.wikipedia.org/wiki/List_of_joyo_kanji}.
+  \\
+  \\
 };
 
 \end{document}
