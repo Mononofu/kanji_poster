@@ -1,6 +1,7 @@
 # -*- coding: utf-8
 import abc
 import argparse
+import collections
 import csv
 import json
 import math
@@ -8,6 +9,7 @@ import re
 
 import colour
 import jaconv
+import palettable
 
 
 class KanjiInfo(object):
@@ -101,8 +103,6 @@ def add_frequency(kanji_info):
       # Some Kanji never occur in any of the sources from above.
       info.frequency = 0
       unseen_kanji.append(kanji)
-  if unseen_kanji:
-    print('failed to find frequency info for: ', ', '.join(unseen_kanji))
 
 
 _SORT_INDICES = {
@@ -147,9 +147,6 @@ def add_radicals(kanji_info):
       info.radicals = []
       unseen_kanji.append(kanji)
 
-  if unseen_kanji:
-    print('failed to find radicals for: ', ', '.join(unseen_kanji))
-
 
 def add_jlpt_level(kanji_info):
   # Data from https://www.nihongo-pro.com/kanji-pal/list/jlpt
@@ -191,16 +188,45 @@ class Colorizer(abc.ABC):
     pass
 
 
+def color_maps():
+  modules = [
+      palettable.cartocolors.diverging,
+      palettable.cartocolors.sequential,
+      palettable.cmocean.diverging,
+      palettable.cmocean.sequential,
+      palettable.colorbrewer.diverging,
+      palettable.colorbrewer.sequential,
+      palettable.lightbartlein.diverging,
+      palettable.lightbartlein.sequential,
+      palettable.matplotlib,
+      palettable.mycarta,
+      palettable.scientific.diverging,
+      palettable.scientific.sequential,
+  ]
+  cur_steps = collections.defaultdict(int)
+  available_color_maps = {}
+  for module in modules:
+    count_start = len(available_color_maps)
+    for name, obj in module.__dict__.items():
+      if hasattr(obj, 'colors') and hasattr(obj, 'mpl_colors'):
+        args = name.split('_')
+        num_steps = int(args[1])
+        name = '_'.join(args[:1] + args[2:])
+        if num_steps > cur_steps[name]:
+          available_color_maps[name] = obj
+  return available_color_maps
+
+
+_COLOR_MAPS = color_maps()
+
+
 class FrequencyColorizer(Colorizer):
   """Colors kanji by the log of their frequency."""
-  def __init__(self, kanji_info, color_frequent, color_rare):
-    # Gradient from a very dark color for infrequent characters to a very light
-    # color for the most frequent ones.
-    self._n_steps = 20
-    self._colors = [
-        c.hex_l[1:] for c in colour.Color(color_rare).range_to(
-            colour.Color(color_frequent), self._n_steps)
-    ]
+  def __init__(self, kanji_info, colormap, max_luminance):
+    self._max_luminance = max_luminance
+    raw_colors = _COLOR_MAPS[colormap].hex_colors
+    self._colors = [self._darken_color(c) for c in raw_colors]
+    self._n_steps = len(self._colors)
     freqs = [self._log_freq(i) for i in kanji_info.values()]
     self._min, self._max = min(freqs), max(freqs)
 
@@ -214,7 +240,13 @@ class FrequencyColorizer(Colorizer):
     # Map the frequency to a log scale before indexing the color gradient.
     index = int((self._log_freq(info) - self._min) / (self._max - self._min) *
                 (self._n_steps - 1))
-    return self._colors[index]
+    return self._colors[index].replace('#', '')
+
+  def _darken_color(self, hex_color):
+    # Ensure all Kanji are dark enough to easily read them on white background.
+    c = colour.Color(hex_color)
+    c.set_luminance(min(c.get_luminance(), self._max_luminance))
+    return c.hex_l
 
 
 _COLORING_METHODS = {
@@ -263,8 +295,6 @@ def render_kanji(kanji, info, x, y, colorizer, minimal):
 
     meaning = info.meaning.split(',')[0]
     if kanji in _MEANING_REPLACEMENTS:
-      print('replacing reading for %s: %s => %s' %
-            (kanji, meaning, _MEANING_REPLACEMENTS[kanji]))
       meaning = _MEANING_REPLACEMENTS[kanji]
     add_node('Meaning', 0, 1.75, meaning)
 
@@ -348,14 +378,14 @@ def main():
       choices=list(_COLORING_METHODS.keys()),
       default='frequency',
       help='How to color Kanji on the poster, default=frequency')
-  parser.add_argument(
-      '--color_rare',
-      default='#0e254c',
-      help='Color for the rare end of the kanji color gradient.')
-  parser.add_argument(
-      '--color_frequent',
-      default='#6fa3fb',
-      help='Color for the frequent end of the  kanji color gradient.')
+  parser.add_argument('--colormap',
+                      default='Balance',
+                      help='The name of the colorcet colormap, see '
+                      'https://colorcet.pyviz.org/user_guide/index.html')
+  parser.add_argument('--max_luminance',
+                      default=0.7,
+                      type=float,
+                      help='Maximum luminance for Kanji color')
   parser.add_argument('--minimal', default='minimal', action='store_true')
   parser.set_defaults(minimal=False)
 
@@ -372,8 +402,8 @@ def main():
 
   add_sort_orders(kanji_info)
 
-  colorizer = _COLORING_METHODS[args.color_by](kanji_info, args.color_frequent,
-                                               args.color_rare)
+  colorizer = _COLORING_METHODS[args.color_by](kanji_info, args.colormap,
+                                               args.max_luminance)
 
   with open('tex/footer.tex', 'w') as f:
     f.write('%d kanji covering %.2f\\%% of common Japanese text.' %
