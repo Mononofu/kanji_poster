@@ -275,6 +275,13 @@ def tikz_node(kind, x, y, text=''):
   return "\\node[%s] at (%f, %f) {%s};" % (kind, x, y, text)
 
 
+def get_meaning(kanji, info):
+  if kanji in _MEANING_REPLACEMENTS:
+    return _MEANING_REPLACEMENTS[kanji]
+  else:
+    return info.meaning.split(',')[0]
+
+
 def render_kanji(kanji, info, x, y, colorizer, minimal):
   """Renders a kanji and related information at the specified xy position."""
   nodes = []
@@ -296,24 +303,13 @@ def render_kanji(kanji, info, x, y, colorizer, minimal):
       kunyomi = format_readings(info.kunyomi, jaconv.kata2hira)
       add_node('Kunyomi', -0.05, 0.1, '\\hbox{\\tate %s}' % kunyomi)
 
-    meaning = info.meaning.split(',')[0]
-    if kanji in _MEANING_REPLACEMENTS:
-      meaning = _MEANING_REPLACEMENTS[kanji]
-    add_node('Meaning', 0, 1.75, meaning)
+    add_node('Meaning', 0, 1.75, get_meaning(kanji, info))
 
   return nodes
 
 
-def generate_poster_tex(kanji_info,
-                        sort_by,
-                        colorizer,
-                        minimal=False,
-                        first_n=None):
+def generate_poster_tex(kanji_info, colorizer, minimal=False):
   """Generates Tex to render all kanji in kanji_info in a big poster."""
-  sorted_info = sorted(kanji_info.items(), key=lambda kv: sort_by(kv[1]))
-  if first_n:
-    sorted_info = sorted_info[:first_n]
-
   # The center of the poster is at (0, 0). Since we are using an A0 landscape
   # poster, the total width is 118.9 and the height 84.1, so the top left corner
   # is at roughly x=59.4 and y=42.
@@ -330,7 +326,7 @@ def generate_poster_tex(kanji_info,
 
   nodes = []
   cum_freq = 0
-  for i, (kanji, info) in enumerate(sorted_info):
+  for i, (kanji, info) in enumerate(kanji_info):
     cum_freq += info.frequency
 
     row = int(i / num_cols)
@@ -353,6 +349,86 @@ def generate_poster_tex(kanji_info,
                   '%d - %d' % (row * num_cols + 1, (row + 1) * num_cols)))
 
   return '\n'.join(nodes)
+
+
+def generate_poster_html(kanji_info, colorizer):
+  template = """
+  <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Kanji Poster</title>
+  <script type="text/javascript" src="http://livejs.com/live.js"></script>
+  <style>
+  body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .item {
+    border: 1px solid lightgrey;
+    height: 2.85em;
+    width: 2.85em;
+    position: relative;
+  }
+
+  .meaning {
+    text-align: center;
+  }
+
+  .kanji {
+    font-size: 1.9em;
+    position: absolute;
+    top: 50%%;
+    left: 50%%;
+    text-align: center;
+    transform: translate(-50%%, -50%%);
+  }
+
+  .onyomi {
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 1.1em;
+    left: 0%%;
+  }
+
+  .kunyomi {
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 1.1em;
+    right: 0%%;
+  }
+
+  .light-text {
+    font-size: 0.35em;
+    color: grey;  
+  }
+  </style>
+</head>
+
+<body>
+%s
+</body>
+
+</html>
+"""
+  items = []
+  for kanji, info in kanji_info:
+    color = '#' + colorizer.choose_color(kanji, info)
+    onyomi = format_readings(info.onyomi,
+                             jaconv.hira2kata) if info.onyomi else ''
+    kunyomi = format_readings(info.kunyomi,
+                              jaconv.kata2hira) if info.kunyomi else ''
+    items.append(f"""
+      <div class='item'>
+        <div class='meaning light-text'>{get_meaning(kanji, info)}</div>
+        <div class='onyomi light-text'>{onyomi}</div>
+        <div class='kanji' style='color: {color}'>{kanji}</div>
+        <div class='kunyomi light-text'>{kunyomi}</div>
+      </div>
+      """)
+
+  return template % ('\n'.join(items))
 
 
 def make_sort_function(index):
@@ -420,12 +496,14 @@ def main():
     for i in range(steps + 1):
       f.write(color('█', colorizer.color_fraction((steps - i) / steps)))
 
+  sort_fn = make_sort_function(args.sort_by)
+  kanji_info = sorted(kanji_info.items(), key=lambda kv: sort_fn(kv[1]))
+
   with open('tex/kanji_grid.tex', 'w') as f:
-    f.write(
-        generate_poster_tex(kanji_info,
-                            make_sort_function(args.sort_by),
-                            colorizer,
-                            minimal=args.minimal))
+    f.write(generate_poster_tex(kanji_info, colorizer, minimal=args.minimal))
+
+  with open('html/main.html', 'w') as f:
+    f.write(generate_poster_html(kanji_info, colorizer))
 
 
 if __name__ == '__main__':
