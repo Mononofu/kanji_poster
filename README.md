@@ -23,6 +23,12 @@ python3 generate_tex.py
 lualatex main.tex
 ```
 
+To convert the pdf to a png image for easy sharing online, use
+
+```bash
+NAME=main ; pdftoppm $NAME.pdf $NAME -png -f 1 -singlefile -rx 50 -ry 50
+```
+
 ## Dependencies
 
 The script uses [colour](https://pypi.org/project/colour/) to interpolate colors and [jaconv](https://pypi.org/project/jaconv/) to convert between hiragana and katakana for readings; you can install both from pip.
