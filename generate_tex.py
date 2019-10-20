@@ -502,7 +502,7 @@ def main():
   with open('tex/kanji_grid.tex', 'w') as f:
     f.write(generate_poster_tex(kanji_info, colorizer, minimal=args.minimal))
 
-  with open('html/main.html', 'w') as f:
+  with open('html/index.html', 'w') as f:
     f.write(generate_poster_html(kanji_info, colorizer))
 
 
